@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header > img {
+    width: 8rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: inherit;
+    font-family: var(--font-geist-mono);
+}
