@@ -1,0 +1,21 @@
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+    font-family: var(--font-geist-mono);
+}
+
+.nav .active {
+    color: var(--link-hover);
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: var(--link-hover);
+}

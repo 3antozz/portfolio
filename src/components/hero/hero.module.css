@@ -1,0 +1,45 @@
+.hero {
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: var(--card-background);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: var(--card-shadow);
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+.right > * {
+    margin-bottom: 1rem;
+}
+
+.hero > svg {
+    flex-shrink: 0;
+}
+
+.top {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.hero a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 120ms ease;
+}
+
+.hero a:hover {
+    color: var(--link-hover);
+}

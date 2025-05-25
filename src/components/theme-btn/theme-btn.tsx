@@ -7,13 +7,11 @@ import { Moon, SunMedium } from 'lucide-react';
 export default function ThemeBtn() {
     const [theme, setTheme] = useState('light');
     useEffect(() => {
-        const theme = localStorage.getItem('theme');
-        if(theme) {
-            const element = document.querySelector('html');
-            if(element) {
-                element.className = theme;
-                setTheme(theme);
-            }
+        const theme = localStorage.getItem('theme') || 'light';
+        const element = document.querySelector('html');
+        if(element) {
+            element.className = theme;
+            setTheme(theme);
         }
     }, [])
     const switchTheme = () : void => {

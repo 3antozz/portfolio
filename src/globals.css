@@ -24,7 +24,7 @@ body {
 
 img, picture, video, canvas, svg {
   display: block;
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 input, button, textarea, select {
@@ -35,9 +35,10 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-p {
+/* p {
   text-wrap: pretty;
-}
+} */
+
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
@@ -49,15 +50,30 @@ h1, h2, h3, h4, h5, h6 {
 :root.light {
   --background: #fbf2f5;
   --text-clr: black;
+  --shadow: #bebebe;
+  --card-background: white;
+  --text-secondary:  #999;
+  --borders: #2rgba(44, 44, 44, 0);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --accent:  #6366f1;
+  --link-hover: #1300ff;
 }
 
 :root.dark {
-  --background: rgb(46, 37, 37);
-  --text-clr: white;
+  --background: #121212;
+  --text-clr: #ffffffde;
+  --shadow: #484747;
+  --card-background: #1e1e1e;
+  --text-secondary:  #999;
+  --borders: #2c2c2c;
+  --card-shadow: 0 4px 12px rgba(255, 255, 255, 0);
+  --accent:  #6366f1;/* 	#00bcd4 (cyan) or #10b981 (emerald) or #6366f1 (indigo) */
+  --link-hover: #ff9f00;
 }
 
 body {
-  padding: 10dvh 15vw;
+  padding: 10dvh 17vw;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   font-family: var(--font-geist-sans);
   background-color: var(--background);
   color: var(--text-clr);
