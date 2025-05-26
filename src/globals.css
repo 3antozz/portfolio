@@ -25,6 +25,7 @@ body {
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 input, button, textarea, select {
@@ -50,32 +51,48 @@ h1, h2, h3, h4, h5, h6 {
 :root.light {
   --background: #fbf2f5;
   --text-clr: black;
+  --btn-text: white;
   --shadow: #bebebe;
   --card-background: white;
-  --text-secondary:  #999;
-  --borders: #2rgba(44, 44, 44, 0);
+  --text-secondary:  #6b7280;
+  --borders: #e5e7eb;
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --accent:  #6366f1;
+  --accent:  #6e07f3;
+  --accent-hover: #5e03d4;
   --link-hover: #1300ff;
 }
 
 :root.dark {
   --background: #121212;
-  --text-clr: #ffffffde;
+  --text-clr: #ededed;
+  --btn-text: black;
   --shadow: #484747;
   --card-background: #1e1e1e;
   --text-secondary:  #999;
   --borders: #2c2c2c;
   --card-shadow: 0 4px 12px rgba(255, 255, 255, 0);
-  --accent:  #6366f1;/* 	#00bcd4 (cyan) or #10b981 (emerald) or #6366f1 (indigo) */
+  --accent:  #facc15;
+  --accent-hover: #dca707;
   --link-hover: #ff9f00;
 }
 
 body {
-  padding: 10dvh 17vw;
+  padding: 10dvh 2rem;  /* 14vw */
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   font-family: var(--font-geist-sans);
   background-color: var(--background);
   color: var(--text-clr);
+  font-weight: 300;
 }
 
+h1, h2 {
+  font-weight: 500;
+}
+
+html.light strong {
+  font-weight: 450;
+}
+
+html.dark strong {
+  font-weight: 500;
+}

@@ -1,0 +1,23 @@
+.home > * {
+    max-width: 65rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logos img {
+    width: 4rem;
+    height: auto;
+}
+
+.project h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}

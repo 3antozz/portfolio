@@ -29,6 +29,6 @@ export default function ThemeBtn() {
         }
     }
     return (
-        <button onClick={switchTheme} className={styles.button}>{theme === 'light' ? <SunMedium size={25} color="black" /> : <Moon size={25} color="white" />}</button>
+        <button title="Change Theme" onClick={switchTheme} className={styles.button}>{theme === 'light' ? <SunMedium size={30} color="black" /> : <Moon size={30} color="white" />}</button>
     );
 }

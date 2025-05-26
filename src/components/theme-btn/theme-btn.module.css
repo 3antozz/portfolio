@@ -1,22 +1,31 @@
 .button {
     padding: 0;
-    position: absolute;
+    /* position: absolute;
     top: 15px;
-    right: 15px;
+    right: 50px; */
     background: none;
     border: none;
     cursor: pointer;
+    border-radius: 50%;
     transition: transform 150ms ease;
 }
 
 .button:hover {
-    transform: scale(1.4);
+    transform: scale(1.3);
 }
 
-:global(html.light) .button:hover svg {
+:global(html.light) .button:hover {
+    background-color: #dadada;
+}
+
+:global(html.dark) .button:hover {
+    background-color: #2a2a2a;
+}
+
+/* :global(html.light) .button:hover svg {
     stroke: blue;
-}
+} */
 
-:global(html.dark) .button:hover svg {
+.button:hover svg {
     stroke: red;
 }
