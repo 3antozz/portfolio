@@ -1,0 +1,25 @@
+.logos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logos img {
+    width: clamp(2.1rem, 3vw, 2.3rem);
+}
+
+:global(html.dark) .express, :global(html.dark) .prisma {
+    filter: invert(1);
+}
+
+:global(html.dark) .next {
+    border: 1px solid #80808057;
+    border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+    .logos {
+        justify-content: center;
+    }
+}

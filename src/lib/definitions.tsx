@@ -6,11 +6,25 @@ export interface Logo {
     class: string
 }
 
+export type stack = {
+    backend: Logo[],
+    frontend: Logo[]
+};
+
 export interface Project {
     title: string, 
     src: StaticImageData,
-    description: ReactNode, 
+    description: ReactNode,
+    brief: string, 
     features: ReactNode[], 
-    stack: Logo[], 
-    link: string
+    stack: stack, 
+    route: string,
+    demo: string,
+    github: string,
+    showcase: Showcase[]
+}
+
+export interface Showcase {
+    title: string,
+    image: StaticImageData
 }

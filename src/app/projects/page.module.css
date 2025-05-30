@@ -1,0 +1,36 @@
+.projects {
+    max-width: 80rem;
+}
+
+.projects > * {
+    margin-bottom: 4rem;
+}
+
+.projects h2 {
+    margin-bottom: 1rem;
+}
+
+.headers {
+    max-width: 68rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.headers > p {
+    font-size: clamp(1.15rem, 3vw, 1.4rem) !important;
+}
+
+@media (max-width: 1000px) {
+    .projects > * {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home > *:last-child {
+        margin-bottom: 1.5rem;
+    }
+    .projects > p, .projects > h2 {
+        text-align: center;
+    }
+}

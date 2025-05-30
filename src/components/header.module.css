@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.header > img {
+    width: 8rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 678px) {
+    .header {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+    .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .name span {
+        display: none;
+    }
+}

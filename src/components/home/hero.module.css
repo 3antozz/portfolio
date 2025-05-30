@@ -1,0 +1,150 @@
+.hero {
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: var(--card-background);
+    border: 1px solid var(--borders);
+    box-shadow: var(--card-shadow);
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.hero h2 {
+    line-height: 1;
+}
+
+.hero svg {
+    flex-shrink: 0;
+}
+
+.right > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
+.right span {
+    display: none;
+}
+
+.top {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.hero p:first-of-type {
+    font-size: clamp(1.15rem, 3vw, 1.4rem) !important;
+}
+
+.hero p:last-of-type {
+    font-size: clamp(1.05rem, 2.7vw, 1.2rem);
+}
+
+.right p > a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    transition: color 300ms ease;
+    font-weight: 350;
+}
+
+.right p > a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    /* transform: translateX(-50%); */
+    transition: transform 200ms ease;
+}
+
+.right p > a:nth-child(1):after {
+    background-color: blue;
+}
+.right p > a:nth-child(2):after {
+    background-color: red;
+}
+.right p > a:nth-child(3):after {
+    background-color: #15ee15;
+}
+.right p > a:nth-child(4):after {
+    background-color: mediumpurple;
+}
+.right p > a:nth-child(5):after {
+    background-color: #ff6bfc;
+}
+
+.hero p > a:hover::after {
+    transform: translateY(250%) scaleY(1.4);
+}
+
+.hero p > a:hover {
+    color: var(--link-hover);
+    border-bottom: none !important;
+}
+
+.ctaButtons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn {
+    font-family: var(--font-geist-mono);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: fit-content;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn.primaryBtn {
+    background-color: var(--accent);
+    color: var(--btn-text);
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.btn.primaryBtn:hover {
+    background-color: var(--accent-hover);
+    transform: scale(1.03);
+}
+
+.btn.secondaryBtn {
+    color: var(--accent);
+    background-color: transparent;
+    border: 2px solid var(--accent);
+}
+
+.btn.secondaryBtn:hover {
+    background-color: var(--accent);
+    color: var(--background);
+    transform: scale(1.03);
+}
+
+@media (max-width: 678px) {
+    .hero > svg {
+        display: none;
+    }
+    .right span {
+        display: inline;
+    }
+    .btn {
+        width: 100%;
+    }
+
+    .hero h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+}

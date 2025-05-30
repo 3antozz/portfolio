@@ -1,0 +1,53 @@
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30rem;
+    gap: 1rem;
+    margin: auto;
+    border-radius: 10px;
+    padding: 1rem 0.5rem;
+    background-color: var(--card-background);
+    box-shadow: var(--card-shadow);
+}
+
+.stack > * {
+    flex: 1;
+}
+
+.stack h4 {
+    font-family: var(--font-geist-mono);
+    font-weight: 450;
+}
+
+.stack img {
+    width: clamp(2.1rem, 3vw, 2.3rem);
+    flex-shrink: 0;
+}
+
+:global(html.dark) .express, :global(html.dark) .prisma {
+    filter: invert(1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wrapper:first-of-type {
+    border-right: 2px solid var(--shadow);
+}
+
+@media (max-width: 678px) {
+    .wrapper:first-of-type {
+        border-right: none;
+    }
+}
