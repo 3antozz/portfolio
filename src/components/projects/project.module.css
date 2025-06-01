@@ -7,6 +7,10 @@
     box-shadow: var(--picture-shadow);
 }
 
+.description {
+    font-size: clamp(1.1rem, 3.5vw, 1.2rem);
+}
+
 .card {
     display: flex;
     align-items: center;
@@ -84,7 +88,7 @@
         align-items: stretch;
     }
     .right {
-        max-width: none;
+        max-width: none !important;
     }
     .card h3 {
         text-align: center;

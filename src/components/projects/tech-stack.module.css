@@ -6,7 +6,7 @@
 }
 
 .logos img {
-    width: clamp(2.1rem, 3vw, 2.3rem);
+    width: clamp(2.1rem, 6vw, 2.3rem);
 }
 
 :global(html.dark) .express, :global(html.dark) .prisma {

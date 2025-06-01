@@ -6,12 +6,17 @@ import NextLogo from "@/../public/logos/next.svg"
 import ViteLogo from "@/../public/logos/vite.svg"
 import EjsLogo from "@/../public/logos/ejs.svg"
 import PrismaLogo from "@/../public/logos/prisma.svg"
+import TypeScriptLogo from "@/../public/logos/typescript.svg"
+import GitLogo from "@/../public/logos/git.svg"
+import VSCodeLogo from "@/../public/logos/vscode.svg"
+import PostmanLogo from "@/../public/logos/postman.svg"
+import TailwindLogo from "@/../public/logos/tailwind.svg"
 import { Logo } from "./definitions"
 
 
-const logos: Record<string, Logo> = {
+const logos = {
     react: {
-        title: 'ReactJS',
+        title: 'React',
         src: ReactLogo,
         class: '',
     },
@@ -26,7 +31,7 @@ const logos: Record<string, Logo> = {
         class: '',
     },
     express: {
-        title: 'ExpressJS',
+        title: 'Express',
         src: ExressLogo,
         class: 'express',
     },
@@ -50,6 +55,31 @@ const logos: Record<string, Logo> = {
         src: PrismaLogo,
         class: 'prisma',
     },
-}
+    typeScript: {
+        title: 'TypeScript',
+        src: TypeScriptLogo,
+        class: '',    
+    },
+    vscode: {
+        title: 'VSCode',
+        src: VSCodeLogo,
+        class: '',    
+    },
+    git: {
+        title: 'Git',
+        src: GitLogo,
+        class: '',    
+    },
+    postman: {
+        title: 'Postman',
+        src: PostmanLogo,
+        class: '',    
+    },
+    tailwind: {
+        title: 'TailwindCSS',
+        src: TailwindLogo,
+        class: '',    
+    },
+} as const satisfies Record<string, Logo>;
 
 export default logos;

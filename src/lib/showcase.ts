@@ -19,6 +19,7 @@ import BlogPost from "@/../public/projects/blog-page/post.png"
 import BlogAuthor from "@/../public/projects/blog-page/author-index.png"
 
 import FileUploaderInterface from "@/../public/projects/file-uploader/interface.png"
+import FileUploaderLogin from "@/../public/projects/file-uploader/login.png"
 
 import { Showcase } from "./definitions"
 
@@ -32,7 +33,7 @@ const Showcases = {
 
     blog_page: [{title: "Visitors Main Page", image: BlogIndex}, {title: "Post Page", image: BlogPost}, {title: "Authors Index", image: BlogAuthor}, {title: "Post Creation", image: BlogCreatePost}],
 
-    file_uploader: [{title: "Main Interface", image: FileUploaderInterface}]
+    file_uploader: [{title: "Main Interface", image: FileUploaderInterface}, {title: "Login Page", image: FileUploaderLogin}]
 
 } as const satisfies Record<string, Showcase[]>
 

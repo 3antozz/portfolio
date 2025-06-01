@@ -2,6 +2,7 @@ import styles from "./footer.module.css"
 import Image from "next/image"
 import GithubLogo from "@/../public/logos/github.svg"
 import LinkedinLogo from "@/../public/logos/linkedin.svg"
+import Link from "next/link"
 import { Mail } from 'lucide-react';
 
 export default function Footer() {
@@ -10,14 +11,14 @@ export default function Footer() {
             <p>© 2025 Y. Belahadji</p>
             <div className={styles.links}>
                 <a href="https://github.com/3antozz" target="_blank" rel="noopener noreferrer">
-                    <Image style={{ transform: "scale(0.9)"}} title="Github" src={GithubLogo} alt="Github logo" unoptimized />
+                    <Image style={{ transform: "scale(0.9) translate(-1%, -2%)"}} title="Github" src={GithubLogo} alt="Github logo" unoptimized />
                 </a>
                 <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noopener noreferrer">
                     <Image title="Linkedin" src={LinkedinLogo} alt="Linkedin logo" unoptimized />
                 </a>
-                <a title="Email" href="mailto:belahadji.yacine@gmail.com">
-                    <Mail style={{ transform: "scale(1.05)"}} color="black" />
-                </a>
+                <Link title="Contact" href="/contact">
+                    <Mail style={{ transform: "translateX(2%)"}} color="black" />
+                </Link>
             </div>
             <p>Built with{' '} 
                 <a title="NextJS" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">NextJS</a>

@@ -35,11 +35,11 @@ export default async function Project(props: { params: Promise<{ project: Projec
                 <div className={styles.links}>
                     <a className={`${styles.btn} ${styles.primaryBtn}`} href={demo} target="_blank" rel="noopener noreferrer">
                        <p>Live Demo</p>
-                       <ExternalLink style={{flexShrink: 0}} />
+                       <ExternalLink style={{flexShrink: 0, transform: "translateY(-5%)"}} />
                     </a>
                     <a className={`${styles.btn} ${styles.secondaryBtn}`} href={github} target="_blank" rel="noopener noreferrer">
                         <p>Github</p>
-                        <ExternalLink style={{flexShrink: 0}} />
+                        <ExternalLink style={{flexShrink: 0, transform: "translateY(-5%)"}} />
                     </a>
                 </div>
             </section>

@@ -13,9 +13,9 @@ export default function Project({ project, featured = false, inversed = false } 
     return (
             <section className={styles.card}>
                 <Image src={src} alt={`${title} interface image`} className={inversed ? `${styles.inversed}` : ""} />
-                <div className={styles.right}>
+                <div className={styles.right} style={{maxWidth: featured ? "40%" : "35%"}}>
                     <h3>{title}</h3>
-                    <p>{description}</p>
+                    <p className={styles.description}>{description}</p>
                     <ul>
                         {features.map((feature, index) => <li key={index}><CircleCheck color="var(--accent)"/><p>{feature}</p></li>)}
                     </ul>

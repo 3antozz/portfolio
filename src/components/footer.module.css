@@ -38,6 +38,7 @@
 
 .links > a:hover {
     background-color: var(--accent);
+    border: none;
 }
 
 :global(html.light) .links > a:hover img, :global(html.light) .links > a:hover svg {

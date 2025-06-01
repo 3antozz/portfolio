@@ -16,7 +16,6 @@
 .nav .active {
     color: var(--link-hover);
     font-weight: bold;
-    /* border-bottom: 3px solid var(--link-hover); */
 }
 
 .nav a::after {
@@ -37,8 +36,3 @@
     transform: translateX(0);
     transform: scaleX(1);
 }
-
-/* .nav a:hover {
-    color: var(--link-hover);
-    border-bottom: 3px solid var(--link-hover);
-} */

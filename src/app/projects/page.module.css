@@ -13,16 +13,19 @@
 .headers {
     max-width: 68rem;
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .headers > p {
-    font-size: clamp(1.15rem, 3vw, 1.4rem) !important;
+    font-size: clamp(1.2rem, 4vw, 1.4rem) !important;
 }
 
 @media (max-width: 1000px) {
     .projects > * {
         margin-bottom: 2rem;
+    }
+    .headers > * {
+        text-align: center;
     }
 }
 

@@ -1,0 +1,103 @@
+.contact {
+    max-width: 45rem;
+    margin: auto;
+}
+
+.header {
+    max-width: 40rem;
+    margin: auto;
+    text-align: center;
+}
+
+.header h2 {
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: clamp(1.1rem, 2.9vw, 1.4rem);
+    line-height: 1.4;
+}
+
+.contact > * {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+}
+
+.firstRow {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.contact label > span {
+    color: red;
+}
+
+.buttonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.contact form button {
+    width: 100%;
+    max-width: 15rem;
+    border-radius: 10px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: var(--accent);
+    color: var(--btn-text);
+    border: none;
+}
+
+.contact form button:hover {
+    background-color: var(--accent-hover);
+    transform: scale(1.03);
+}
+
+.contact input, .contact textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-size: inherit;
+    color: inherit;
+}
+
+.contact textarea {
+    min-height: 11rem;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border-color: var(--input-focus);
+    box-shadow: var(--input-shadow);
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .firstRow {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+

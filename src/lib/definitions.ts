@@ -6,10 +6,16 @@ export interface Logo {
     class: string
 }
 
-export type stack = {
+export type Stack = {
     backend: Logo[],
     frontend: Logo[]
 };
+
+export type GeneralStack = {
+    techs: Logo[],
+    tools: Logo[],
+    learning: Logo[]
+}
 
 export interface Project {
     title: string, 
@@ -17,7 +23,7 @@ export interface Project {
     description: ReactNode,
     brief: string, 
     features: ReactNode[], 
-    stack: stack, 
+    stack: Stack, 
     route: string,
     demo: string,
     github: string,

@@ -1,6 +1,6 @@
 import { Project } from "./definitions"
 import logos from "./logos"
-import OdinBookImg from "@/../public/projects/odinbook/interface.png"
+import OdinBookImg from "@/../public/projects/odinbook/interface2.png"
 import MessengerImg from "@/../public/projects/messaging-app/interface.png"
 import WaldoImg from "@/../public/projects/where's-waldo/welcome.png"
 import BlogImg from "@/../public/projects/blog-page/index.png"
@@ -23,7 +23,7 @@ const projects = {
         github: 'https://github.com/3antozz/Odin-Book',
         stack: {
             backend: [logos.node, logos.express, logos.postgres, logos.prisma],
-            frontend: [logos.react, logos.vite]
+            frontend: [logos.react]
         },
         showcase: Showcases.odinbook
     },
@@ -51,7 +51,7 @@ const projects = {
     where_is_waldo: {
         title: 'Where is Waldo ?',
         src: WaldoImg,
-        description: <>Full-stack Photo Tagging game where your goal is to find all the hidden characters as fast as possible.</>,
+        description: <>Full-stack <strong>Photo Tagging</strong> game where your goal is to find all the hidden characters as fast as possible.</>,
         brief: "This was one of the first full-stack projects I created, it's purpose was to tie everything I learned from The Odin Project's course together in a fun project.",
         features: [
             <><strong>Server side</strong> character location checking.</>,
@@ -63,7 +63,7 @@ const projects = {
         github: 'https://github.com/3antozz/Where-is-Waldo',
         stack: {
             backend: [logos.node, logos.express, logos.postgres, logos.prisma],
-            frontend: [logos.react, logos.vite]
+            frontend: [logos.react]
         },
         showcase: Showcases.where_is_waldo
     },
@@ -83,7 +83,7 @@ const projects = {
         github: 'https://github.com/3antozz/Blog-Page',
         stack: {
             backend: [logos.node, logos.express, logos.postgres, logos.prisma],
-            frontend: [logos.react, logos.vite]
+            frontend: [logos.react]
         },
         showcase: Showcases.blog_page
     },
@@ -96,7 +96,7 @@ const projects = {
             <><strong>Authentification</strong> via username & password.</>,
             <>Folder and file <strong>management</strong>.</>,
             <>Files <strong>upload</strong> and download.</>,
-            <>Public folder <strong>sharing</strong> with expiration period.</>,
+            <>Public folder <strong>sharing</strong> with <strong>expiration</strong> period.</>,
         ],
         route: '/projects/file_uploader',
         demo: 'https://file-uploader-ifat.onrender.com',
