@@ -16,7 +16,7 @@ export default function ScrollButton() {
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
     return (
-        <button style={{opacity: visible ? "1" : "0", pointerEvents: visible ? 'auto' : 'none'}} 
+        <button aria-label='scroll to top' style={{opacity: visible ? "1" : "0", pointerEvents: visible ? 'auto' : 'none'}} 
                 className="scroll-up" onClick={scrollToTop}>
                 <ArrowUp color='var(--background)' />
         </button>

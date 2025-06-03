@@ -21,6 +21,7 @@ export interface Project {
     title: string, 
     src: StaticImageData,
     description: ReactNode,
+    text_description: string,
     brief: string, 
     features: ReactNode[], 
     stack: Stack, 
@@ -28,6 +29,15 @@ export interface Project {
     demo: string,
     github: string,
     showcase: Showcase[]
+}
+
+export interface LatestProject {
+    title: string, 
+    src: StaticImageData,
+    description: ReactNode,
+    features: ReactNode[], 
+    stack: Stack, 
+    route: string,
 }
 
 export interface Showcase {

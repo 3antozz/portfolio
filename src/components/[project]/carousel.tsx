@@ -32,15 +32,16 @@ export default function ImageCarousel({ slides }: { slides: Showcase[] }) {
     return (
     <section className={styles.carousel}>
         <div className={styles.slide}>
-        {slides.length > 1 && <button className={`${styles.nav} ${styles.left}`} onClick={prevSlide}><ChevronLeft style={{transform: "translateX(-5%)"}} /></button>}
+        {slides.length > 1 && <button aria-label='previous slide' className={`${styles.nav} ${styles.left}`} onClick={prevSlide}><ChevronLeft style={{transform: "translateX(-5%)"}} /></button>}
         <Image
             src={slides[current].image}
             alt={`${slides[current].title} of the project`}
             ref={imgRef}
             onLoad={toggleClass}
             onAnimationEnd={removeClass}
+            priority={true}
         />
-        {slides.length > 1 && <button className={`${styles.right} ${styles.nav}`} onClick={nextSlide}><ChevronRight style={{transform: "translateX(5%)"}} /></button>}
+        {slides.length > 1 && <button aria-label='next slide' className={`${styles.right} ${styles.nav}`} onClick={nextSlide}><ChevronRight style={{transform: "translateX(5%)"}} /></button>}
         </div>
         <p className={styles.caption}>{slides[current].title}</p>
         {slides.length > 1 && <div className={styles.dots}>

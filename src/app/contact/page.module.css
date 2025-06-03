@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.header h2 {
+.header h1 {
     margin-bottom: 1rem;
 }
 
@@ -93,6 +93,14 @@
     border-color: var(--input-focus);
     box-shadow: var(--input-shadow);
     outline: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .contact > * {
+        margin-bottom: 1.5rem;
+    }
 }
 
 @media (max-width: 600px) {

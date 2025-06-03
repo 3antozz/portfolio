@@ -6,13 +6,11 @@ import { Moon, SunMedium } from 'lucide-react';
 
 export default function ThemeBtn() {
     const [theme, setTheme] = useState('light');
+    const [hidden, setHidden] = useState(true);
     useEffect(() => {
         const theme = localStorage.getItem('theme') || 'light';
-        const element = document.querySelector('html');
-        if(element) {
-            element.className = theme;
-            setTheme(theme);
-        }
+        setTheme(theme);
+        setHidden(false)
     }, [])
     const switchTheme = () : void => {
         const element = document.querySelector('html');
@@ -29,6 +27,6 @@ export default function ThemeBtn() {
         }
     }
     return (
-        <button title="Change Theme" onClick={switchTheme} className={styles.button}>{theme === 'light' ? <SunMedium size={30} color="black" /> : <Moon size={30} color="white" />}</button>
+        <button aria-label='change theme' title="Change Theme" style={{opacity: hidden ? '0' : '1'}} onClick={switchTheme} className={styles.button}>{theme === 'light' ? <SunMedium size={30} /> : <Moon size={30} />}</button>
     );
 }

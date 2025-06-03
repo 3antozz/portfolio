@@ -2,6 +2,36 @@ import Link from "next/link"
 import styles from './page.module.css'
 import Image from "next/image";
 import myStack from "@/lib/tech";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'About',
+    description: 'Learn more about Yacine Belahadji, a full-stack developer passionate about crafting fast, scalable web apps with modern JavaScript frameworks like React, Next.js, and Express.js.',
+    openGraph: {
+        title: 'Yacine Belahadji | About',
+        description: 'Learn more about Yacine Belahadji, a full-stack developer passionate about crafting fast, scalable web apps with modern JavaScript frameworks like React, Next.js, and Express.js.',
+        images: [
+            {
+                url: '/opengraph-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'OpenGraph Image',
+            },
+        ],
+  },
+  twitter: {
+    title: 'Yacine Belahadji | About',
+    description: 'Learn more about Yacine Belahadji, a full-stack developer passionate about crafting fast, scalable web apps with modern JavaScript frameworks like React, Next.js, and Express.js.',
+    images: [
+      {
+        url: '/opengraph-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'OpenGraph Image',
+      },
+    ]
+  },
+};
 
 const { techs , tools, learning } = myStack;
 
@@ -9,7 +39,7 @@ export default function About() {
   return (
       <main className={styles.page}>
         <section className={styles.intro}>
-            <h2 className={styles.heading1}>About Me</h2>
+            <h1 className={styles.heading1}>About Me</h1>
             <p className={styles.paragraph}>
                 Hello, Im <em>Yacine Belahadji</em>, 24 yo — from <em>Algeria</em>. I&apos;m a modern full-stack Javascript web developer focused on building fast, user-friendly, and responsive web applications.
                 My tech stack is modern and I&apos;m always looking to learn new things to improve my skills and creations.
@@ -32,11 +62,11 @@ export default function About() {
             </p>
         </section>
 
-        <section className={styles.skills}>
+        <section className={styles.skills} data-aos="fade-up">
             <h2 className={styles.heading2}>Tech Stack</h2>
             <div className={styles.stack}>
                 <div className={styles.wrapper}>
-                    <h4>Technologies</h4>
+                    <h3>Technologies</h3>
                     <ul className={styles.tech}>
                     {techs.map((tech, index) => 
                     <li key={index} className={styles.logo}>
@@ -47,7 +77,7 @@ export default function About() {
                     </ul>
                 </div>
                 <div className={styles.wrapper}>
-                    <h4>Tools</h4>
+                    <h3>Tools</h3>
                     <ul className={styles.tools}>
                     {tools.map((tech, index) => <li key={index} className={styles.logo}>
                         <Image className={styles[tech.class]} title={tech.title} src={tech.src} alt={`${tech.title} logo`} unoptimized />
@@ -56,7 +86,7 @@ export default function About() {
                     </ul>
                 </div>
                 <div className={styles.wrapper}>
-                    <h4>Currently Learning</h4>
+                    <h3>Currently Learning</h3>
                     <ul className={styles.tech}>
                     {learning.map((tech, index) => 
                     <li key={index} className={styles.logo}>

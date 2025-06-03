@@ -8,7 +8,7 @@ import { Mail } from 'lucide-react';
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <p>© 2025 Y. Belahadji</p>
+            <p>© 2025 B. Yacine</p>
             <div className={styles.links}>
                 <a href="https://github.com/3antozz" target="_blank" rel="noopener noreferrer">
                     <Image style={{ transform: "scale(0.9) translate(-1%, -2%)"}} title="Github" src={GithubLogo} alt="Github logo" unoptimized />

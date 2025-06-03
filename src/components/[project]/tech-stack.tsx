@@ -7,7 +7,6 @@ export default function TechStack({stack} : {stack: Stack}) {
     return (
     <div className={styles.stack}>
         <div className={styles.wrapper}>
-            {/* <h4>Frontend</h4> */}
             <ul className={styles.frontend}>
                 {logos.map((logo, index) => (
                 <li key={index} className={styles.logo}>
@@ -17,17 +16,6 @@ export default function TechStack({stack} : {stack: Stack}) {
                 ))}
             </ul>
         </div>
-        {/* <div className={styles.wrapper}>
-            <h4>Backend</h4>
-            <ul className={styles.backend}>
-                {stack.backend.map((logo, index) => (
-                <li key={index} className={styles.logo}>
-                    <Image key={logo.title} className={styles[logo.class]} title={logo.title} src={logo.src} alt={`${logo.title} logo`} unoptimized />
-                    <p>{logo.title}</p>
-                </li>
-                ))}
-            </ul>
-        </div> */}
     </div>
     );
 }

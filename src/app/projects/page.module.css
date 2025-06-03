@@ -3,16 +3,16 @@
 }
 
 .projects > * {
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
-.projects h2 {
+.projects h1 {
     margin-bottom: 1rem;
 }
 
 .headers {
     max-width: 68rem;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 5rem;
 }
 
@@ -33,7 +33,7 @@
     .home > *:last-child {
         margin-bottom: 1.5rem;
     }
-    .projects > p, .projects > h2 {
+    .projects > p, .projects > h1 {
         text-align: center;
     }
 }

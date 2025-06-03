@@ -4,19 +4,34 @@
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 4rem;
+    /* animation: fadeIn 450ms ease-out both; */
 }
 
-.header > img {
+.header img {
     width: 8rem;
     height: auto;
     border-radius: 50%;
 }
+
+.header > a {
+    width: 8rem;
+    height: auto;
+    border-radius: 50%;
+}
+
 
 .name {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+}
+
+.name > a {
+    text-decoration: none;
+    color: inherit;
+    font-size: clamp(1.8rem, 7vw, 2.3rem);
+    line-height: 1.2;
 }
 
 @media (max-width: 1000px) {
@@ -39,4 +54,9 @@
     .name span {
         display: none;
     }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
 }

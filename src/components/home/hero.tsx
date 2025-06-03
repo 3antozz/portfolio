@@ -7,7 +7,7 @@ export default function Hero() {
         <section className={styles.hero}>
             <Terminal size={40} color="var(--text-clr)" />
             <div className={styles.right}>
-                <h2><span>&#128187;</span>{' '}Fullstack Web Developer</h2> 
+                <h1><span>&#128187;</span>{' '}Fullstack Web Developer</h1> 
                 <p>I build web apps with{' '} 
                     <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">Next.js</a>,{' '}
                     <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</a>,{' '}

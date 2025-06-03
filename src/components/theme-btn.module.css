@@ -14,6 +14,10 @@
     transform: scale(1.3);
 }
 
+.button svg {
+    stroke: var(--text-clr);
+}
+
 :global(html.light) .button:hover {
     background-color: #dadada;
 }
@@ -27,7 +31,7 @@
 } */
 
 .button:hover svg {
-    stroke: red;
+    stroke: red !important;
 }
 
 @media (max-width: 678px) {

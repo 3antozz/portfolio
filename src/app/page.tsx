@@ -1,9 +1,7 @@
 import styles from "./page.module.css";
 import Hero from "@/components/home/hero";
 import Project from "@/components/projects/project";
-import projects from "@/lib/projects";
-
-const { odinbook } = projects;
+import LastProject from "@/lib/latest-project";
 
 export default function Home() {
   return (
@@ -11,7 +9,7 @@ export default function Home() {
       <Hero />
       <section className={styles.project}>
         <h2>Latest Project</h2>
-        <Project project={odinbook} featured inversed={false} />
+        <Project project={LastProject} featured inversed={false} />
       </section>
     </main>
   );

@@ -1,5 +1,5 @@
 .page {
-    max-width: 50rem;
+    max-width: 55rem;
     margin: 0 auto;
 }
 
@@ -14,10 +14,6 @@
 .contactLink {
     margin-bottom: 3rem;
 }
-
-/* .page h2, .page p {
-    text-align: center;
-} */
 
 .heading1, .heading2 {
     margin-bottom: 1rem;
@@ -36,7 +32,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    /* max-width: 15rem; */
     gap: 2rem;
     margin: auto;
     border-radius: 10px;
@@ -49,7 +44,7 @@
     flex: 1;
 }
 
-.stack h4 {
+.stack h3 {
     font-family: var(--font-geist-mono);
     font-weight: 450;
 }
@@ -64,12 +59,10 @@
 }
 
 .logo {
-    flex: 1;
     display: flex;
     align-items: center;
-    gap: 0.8rem;
+    gap: 0.6rem;
     justify-content: center;
-    /* margin-bottom: 1rem; */
 }
 
 .wrapper {
@@ -93,12 +86,16 @@
 }
 
 
-/* .wrapper:first-of-type {
-    border-right: 2px solid var(--shadow);
-} */
-
-/* @media (max-width: 678px) {
-    .wrapper:first-of-type {
-        border-right: none;
+@media (max-width: 678px) {
+    .intro,
+    .skills,
+    .journey,
+    .personal,
+    .contactLink {
+        margin-bottom: 1.5rem;
     }
-} */
+
+    .page h1 {
+        text-align: center;
+    }
+}
