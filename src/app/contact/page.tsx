@@ -1,7 +1,6 @@
 import styles from "./page.module.css";
 import FormListener from "./form-listener";
 import { Metadata } from 'next';
-
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'Get in touch with Yacine Belahadji for freelance or full-time opportunities in full-stack web development.',

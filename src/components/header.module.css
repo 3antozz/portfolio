@@ -8,15 +8,21 @@
 }
 
 .header img {
+    object-fit: cover;
     width: 8rem;
-    height: auto;
+    height: 8rem;
     border-radius: 50%;
 }
 
 .header > a {
     width: 8rem;
-    height: auto;
+    height: 8rem;
     border-radius: 50%;
+    transition: transform 350ms ease;
+}
+
+.header > a:hover {
+    transform: scale(1.05);
 }
 
 

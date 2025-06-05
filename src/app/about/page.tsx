@@ -1,7 +1,7 @@
 import Link from "next/link"
 import styles from './page.module.css'
-import Image from "next/image";
-import myStack from "@/lib/tech";
+// import Image from "next/image";
+// import myStack from "@/lib/tech";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
 };
 
-const { techs , tools, learning } = myStack;
+// const { techs , tools, learning } = myStack;
 
 export default function About() {
   return (
@@ -62,7 +62,7 @@ export default function About() {
             </p>
         </section>
 
-        <section className={styles.skills} data-aos="fade-up">
+        {/* <section className={styles.skills} data-aos="fade-up">
             <h2 className={styles.heading2}>Tech Stack</h2>
             <div className={styles.stack}>
                 <div className={styles.wrapper}>
@@ -97,7 +97,7 @@ export default function About() {
                     </ul>
                 </div>
             </div>
-        </section>
+        </section> */}
 
         <section className={styles.personal}>
             <h2 className={styles.heading2}>Outside of Coding</h2>

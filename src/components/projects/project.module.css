@@ -16,6 +16,10 @@
     gap: 1rem;
 }
 
+.card h2 {
+    margin-bottom: 1.2rem;
+}
+
 .card > a {
     position: relative;
     transition: filter 350ms ease, transform 350ms ease;
@@ -50,7 +54,7 @@
     max-width: 35%;
 }
 
-.right > *:not(:last-child):not(:nth-child(3)){
+.right > *:nth-child(2), .right > *:nth-child(4){
     padding-bottom: 1.2rem;
 }
 

@@ -9,7 +9,7 @@
 .links {
     display: flex;
     align-items: center;
-    gap: clamp(0.8rem, 1.5vw, 2rem);
+    gap: clamp(0.8rem, 3vw, 2rem);
 }
 
 .links img, .links svg {
@@ -22,7 +22,7 @@
 }
 
 .links > a {
-    width: clamp(2.3rem, 3.5vw, 2.7rem);
+    width: clamp(2.3rem, 4vw, 2.7rem);
     padding: 0.3rem;
     aspect-ratio: 1;
     overflow: hidden;

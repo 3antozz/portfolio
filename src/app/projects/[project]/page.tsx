@@ -80,14 +80,16 @@ export default async function Project(props: { params: Promise<{ project: Projec
                     <TechStack stack={stack}/>
                 </div>
                 <div className={styles.links} data-aos="fade-up">
-                    <a className={`${styles.btn} ${styles.primaryBtn}`} href={demo} target="_blank" rel="noopener noreferrer">
-                       <p>Live Demo</p>
-                       <ExternalLink style={{flexShrink: 0, transform: "translateY(-5%)"}} />
-                    </a>
-                    <a className={`${styles.btn} ${styles.secondaryBtn}`} href={github} target="_blank" rel="noopener noreferrer">
-                        <p>Github</p>
+                    <div>
+                        <a className={`${styles.btn} ${styles.primaryBtn}`} href={demo} target="_blank" rel="noopener noreferrer">
+                        <p>Live Demo</p>
                         <ExternalLink style={{flexShrink: 0, transform: "translateY(-5%)"}} />
-                    </a>
+                        </a>
+                        <a className={`${styles.btn} ${styles.secondaryBtn}`} href={github} target="_blank" rel="noopener noreferrer">
+                            <p>Github</p>
+                            <ExternalLink style={{flexShrink: 0, transform: "translateY(-5%)"}} />
+                        </a>
+                    </div>
                     <div className={styles.note}>
                         <div className={styles.top}>
                             <CircleAlert size={19} color="var(--link-hover)" />

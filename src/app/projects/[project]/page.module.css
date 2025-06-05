@@ -76,12 +76,22 @@
     max-width: 45rem;
 }
 
-.links {
+/* .links {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+} */
+
+.links > div:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
 }
 
 .btn {
@@ -90,7 +100,7 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    width: fit-content;
+    width: 13rem;
     padding: 0.6rem 1.5rem;
     border-radius: 0.5rem;
     text-decoration: none;
@@ -124,9 +134,8 @@
     padding: 0.7rem 1.2rem;
     border-left: 5px solid var(--accent);
     background-color: none;
-    border-radius: 10px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
+    width: fit-content;
+    margin: auto;
 }
 
 .note p {

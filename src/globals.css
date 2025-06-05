@@ -50,6 +50,8 @@ h1, h2, h3, h4, h5, h6 {
 
 :root.light {
   --background: #fbf2f5;
+  --gradient: linear-gradient(to bottom right, #ffffff, #f6f6f6);
+  --bg-gradient-opacity: 0.2;
   --text-clr: black;
   --btn-text: white;
   --shadow: #bebebe;
@@ -72,6 +74,8 @@ h1, h2, h3, h4, h5, h6 {
 
 :root.dark {
   --background: #121212;
+  --gradient: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
+  --bg-gradient-opacity: 1;
   --text-clr: #ededed;
   --btn-text: black;
   --shadow: #484747;
@@ -79,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   --card-background: #1e1e1e;
   --text-secondary:  #8b8b8b;
   --borders: #2c2c2c;
-  --card-shadow: 0 4px 12px rgba(255, 255, 255, 0);
+  --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 0 5px rgba(255, 255, 255, 0.05);
   --accent:  #facc15;
   --accent-hover: #dca707;
   --other-accent: #6e07f3;
@@ -92,6 +96,17 @@ h1, h2, h3, h4, h5, h6 {
   --input-shadow: 0 0 0 3px rgba(250, 204, 21, 0.3);
 }
 
+/* body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: var(--gradient);
+  opacity: var(--bg-gradient-opacity); 
+  transition: opacity 0.3s ease;
+  z-index: -1;
+} */
+
 body {
   position: relative;
   padding: 10dvh 2rem;  /* 14vw */
@@ -99,6 +114,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   font-family: var(--font-geist-sans);
   background-color: var(--background);
+  /* background: var(--gradient) !important; */
   color: var(--text-clr);
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   font-weight: 350;

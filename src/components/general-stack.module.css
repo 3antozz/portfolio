@@ -1,24 +1,3 @@
-.page {
-    max-width: 55rem;
-    margin: 0 auto;
-}
-
-.page p {
-   font-size: clamp(1.1rem, 4vw, 1.3rem)
-}
-
-.intro,
-.skills,
-.journey,
-.personal,
-.contactLink {
-    margin-bottom: 3rem;
-}
-
-.heading1, .heading2 {
-    margin-bottom: 1rem;
-}
-
 .tech, .tools {
     padding: 0;
 }
@@ -80,23 +59,4 @@
     flex-wrap: wrap;
     gap: 2rem;
     row-gap: 1rem;
-}
-
-.paragraph a:hover {
-    text-decoration: underline !important;
-}
-
-
-@media (max-width: 678px) {
-    .intro,
-    .skills,
-    .journey,
-    .personal,
-    .contactLink {
-        margin-bottom: 1.5rem;
-    }
-
-    .page h1 {
-        text-align: center;
-    }
 }
