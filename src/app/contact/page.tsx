@@ -46,16 +46,16 @@ export default function Contact() {
           </div>
           <div>
             <label htmlFor="email">Email <span>*</span></label>
-            <input type="email" name="email" required  />
+            <input type="email" name="email" id="email" required  />
           </div>
         </div>
         <div>
           <label htmlFor="subject">Subject <span>*</span></label>
-          <input name="subject" required  />
+          <input name="subject" id="subject" required  />
         </div>
         <div>
           <label htmlFor="message">Message <span>*</span></label>
-          <textarea name="message" id="Message" required ></textarea>
+          <textarea name="message" id="message" required ></textarea>
         </div>
         <div className={styles.buttonDiv}>
           <button>Send Message</button>
