@@ -12,7 +12,11 @@
 }
 
 @media (max-width: 768px) {
-    .home > *:last-child {
-        margin-bottom: 1.5rem;
+    .home > * {
+        margin-bottom: 3rem;
+    }
+
+    .home section > h2, .home > h2 {
+        margin-bottom: 2rem;
     }
 }

@@ -7,7 +7,7 @@ export default function FadeWrapper() {
     useEffect(() => {
         AOS.init({
         once: true,
-        duration: 500,
+        duration: 600,
     });
     }, [])
     return (

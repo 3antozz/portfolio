@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 1000px) {
-    .projects > * {
+    .projects > *:not(:last-child) {
         margin-bottom: 2rem;
     }
     .headers > * {
@@ -30,9 +30,6 @@
 }
 
 @media (max-width: 768px) {
-    .home > *:last-child {
-        margin-bottom: 1.5rem;
-    }
     .projects > p, .projects > h1 {
         text-align: center;
     }

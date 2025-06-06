@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   --stack-bg: #e4e3e3;
   --stack-border: #6e07f382;
   --stack-card-hover: 0px 0px 6px #6e07f3b0;
+  --stack-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 :root.dark {
@@ -102,6 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   --stack-bg: #443737;
   --stack-border: #facc155f;
   --stack-card-hover: 0px 0px 6px #facc1580;
+  --stack-shadow: -4px -1px 20px 0px #00000085;
 }
 
 /* body::before {

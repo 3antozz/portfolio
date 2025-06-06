@@ -8,7 +8,7 @@ const { techs , tools, learning } = myStack;
 
 function Section ({list, title, Icon} : {list: Logo[], title: string, Icon: React.ComponentType}) {
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} data-aos={title === "Tools" ? 'fade-left' : title === "Core Stack" ? 'fade-up' : 'fade-right'}>
             <div className={styles.title}>
                 {/* <Image title={title} src={tech.src} alt={`${title} logo`} unoptimized /> */}
                 <Icon />
@@ -28,7 +28,7 @@ function Section ({list, title, Icon} : {list: Logo[], title: string, Icon: Reac
 
 export default function GeneralStack() {
   return (
-    <section className={styles.skills} data-aos="fade-up">
+    <section className={styles.skills} >
         <div className={styles.stack}>
             <Section list={tools} title="Tools" Icon={Wrench}  />
             <Section list={techs} title="Core Stack" Icon={Code} />

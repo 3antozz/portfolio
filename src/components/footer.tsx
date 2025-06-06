@@ -8,21 +8,28 @@ import { Mail } from 'lucide-react';
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <p>© 2025 B. Yacine</p>
-            <div className={styles.links}>
-                <a href="https://github.com/3antozz" target="_blank" rel="noopener noreferrer">
-                    <Image style={{ transform: "scale(0.9) translate(-1%, -2%)"}} title="Github" src={GithubLogo} alt="Github logo" unoptimized />
-                </a>
-                <a href="https://www.linkedin.com/in/yacine-belahadji-b21a60270/" target="_blank" rel="noopener noreferrer">
-                    <Image title="Linkedin" src={LinkedinLogo} alt="Linkedin logo" unoptimized />
-                </a>
-                <Link title="Contact" href="/contact">
-                    <Mail style={{ transform: "translateX(2%)"}} color="black" />
-                </Link>
+            <div className={styles.top}>
+                <p>© 2025 <strong>Yacine Belahadji</strong></p>
+                <div className={styles.links}>
+                    <a href="https://github.com/3antozz" target="_blank" rel="noopener noreferrer">
+                        <Image style={{ transform: "scale(0.9) translate(-1%, -2%)"}} title="Github" src={GithubLogo} alt="Github logo" unoptimized />
+                    </a>
+                    <a href="https://www.linkedin.com/in/yacine-belahadji-b21a60270/" target="_blank" rel="noopener noreferrer">
+                        <Image title="Linkedin" src={LinkedinLogo} alt="Linkedin logo" unoptimized />
+                    </a>
+                    <Link title="Contact" href="/contact">
+                        <Mail style={{ transform: "translateX(2%)"}} color="black" />
+                    </Link>
+                </div>
             </div>
-            <p>Built with{' '} 
-                <a title="NextJS" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">NextJS</a>
-            </p>
+            <div className={styles.line}>
+                {' '}
+            </div>
+            <div className={styles.bottom}>
+                <p>Built with{' '} 
+                    <a title="NextJS" href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">NextJS</a>
+                </p>
+            </div>
         </footer>
     )
 }
