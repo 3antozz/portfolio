@@ -1,8 +1,8 @@
 import { Logo } from "../definitions"
 
 const logo : Logo = {
-                title: 'TypeScript',
-                class: '',   
+                title: 'Zustand',
+                class: '',
             }
 
 export default logo

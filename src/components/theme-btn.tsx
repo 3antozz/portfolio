@@ -5,10 +5,10 @@ import { Moon, SunMedium } from 'lucide-react';
 
 
 export default function ThemeBtn() {
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dark');
     const [hidden, setHidden] = useState(true);
     useEffect(() => {
-        const theme = localStorage.getItem('theme') || 'light';
+        const theme = document.querySelector("html")!.className;
         setTheme(theme);
         setHidden(false)
     }, [])

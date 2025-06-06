@@ -109,7 +109,7 @@ export default function About() {
         <section className={styles.contactLink}>
             <h2 className={styles.heading2}>Want to work together?</h2>
             <p className={styles.paragraph}>
-                  Let’s get in touch — <Link style={{color: "var(--accent)", textDecoration: "none"}} href="/contact">Contact me here</Link>.
+                  Let’s get in touch — <Link style={{color: "var(--accent)", textDecoration: "none"}} href="/contact">Contact me</Link>.
             </p>
         </section>
       </main>

@@ -62,7 +62,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light" suppressHydrationWarning>
+    <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         <script
           defer
@@ -75,6 +75,8 @@ export default function RootLayout({
                   const theme = stored || (prefersDark ? 'dark' : 'light');
                   if (theme === 'dark') {
                     document.documentElement.className = ('dark');
+                  } else {
+                    document.documentElement.className = ('light');
                   }
                 } catch (e) {}
               })();
@@ -92,25 +94,25 @@ export default function RootLayout({
                   "@type": "ListItem",
                   "position": 1,
                   "name": "Home",
-                  "item": "https://yourdomain.com"
+                  "item": "https://yacinedev.com"
                 },
                 {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "About",
-                  "item": "https://yourdomain.com/about"
+                  "item": "https://yacinedev.com/about"
                 },
                 {
                   "@type": "ListItem",
                   "position": 3,
                   "name": "Projects",
-                  "item": "https://yourdomain.com/projects"
+                  "item": "https://yacinedev.com/projects"
                 },
                 {
                   "@type": "ListItem",
                   "position": 4,
                   "name": "Contact",
-                  "item": "https://yourdomain.com/contact"
+                  "item": "https://yacinedev.com/contact"
                 }
               ]
             })

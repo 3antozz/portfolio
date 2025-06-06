@@ -1,0 +1,111 @@
+.tech {
+    padding: 0;
+}
+
+.stack p {
+    font-size: clamp(1rem, 1.5vw, 1.05rem);
+    font-weight: 400;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.title svg {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--accent);
+    stroke: var(--btn-text);
+    width: clamp(2.2rem, 5vw, 2.6rem);
+    flex-shrink: 0;
+}
+.stack {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stack > * {
+    border-radius: 10px;
+    padding: 1.5rem 1rem;
+    background-color: var(--card-second-bg);
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--borders);
+}
+
+.stack h3 {
+    /* font-family: var(--font-geist-mono); */
+    font-weight: 450;
+}
+
+.stack img {
+    width: clamp(1.6rem, 3.5vw, 1.8rem);
+    flex-shrink: 0;
+}
+
+:global(html.dark) .express, :global(html.dark) .prisma {
+    filter: invert(1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    justify-content: center;
+    background-color: var(--stack-bg);
+    border-radius: 15px;
+    padding: 0.3rem 1rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    width: 100%;
+    /* flex: 1; */
+    max-width: 21rem;
+    min-height: 17rem;
+    transition: transform 400ms ease;
+}
+
+.wrapper:hover {
+    transform: scale(1.02);
+    box-shadow: var(--stack-card-hover);
+}
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.wrapper:nth-child(2) {
+    /* border: 2px solid var(--stack-border); */
+    max-width: 22rem;
+    background-color: var(--card-background);
+    /* box-shadow: 0px 0px 10px rgba(255,255,0,0.1); */
+}
+
+.wrapper:nth-child(2) h3 {
+    font-weight: 700;
+    /* max-width: 350px; */
+}
+
+/* .wrapper:nth-child(2) .logo {
+    border: 2px solid var(--stack-border);
+} */
+
+@media (max-width: 1170px) {
+    .wrapper:nth-child(2) {
+        order: -1;
+    }
+}

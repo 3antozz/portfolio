@@ -1,85 +1,37 @@
-import ReactLogo from "@/../public/logos/react.svg"
-import NodeLogo from "@/../public/logos/node.svg"
-import PostgresLogo from "@/../public/logos/postgres.svg"
-import ExressLogo from "@/../public/logos/express.svg"
-import NextLogo from "@/../public/logos/next.svg"
-import ViteLogo from "@/../public/logos/vite.svg"
-import EjsLogo from "@/../public/logos/ejs.svg"
-import PrismaLogo from "@/../public/logos/prisma.svg"
-import TypeScriptLogo from "@/../public/logos/typescript.svg"
-import GitLogo from "@/../public/logos/git.svg"
-import VSCodeLogo from "@/../public/logos/vscode.svg"
-import PostmanLogo from "@/../public/logos/postman.svg"
-import TailwindLogo from "@/../public/logos/tailwind.svg"
+import ReactLogo from "@/lib/logos/react"
+import NodeLogo from "@/lib/logos/node"
+import PostgresLogo from "@/lib/logos/postgres"
+import ExpressLogo from "@/lib/logos/express"
+import NextLogo from "@/lib/logos/next"
+import ViteLogo from "@/lib/logos/vite"
+import EjsLogo from "@/lib/logos/ejs"
+import PrismaLogo from "@/lib/logos/prisma"
+import TypeScriptLogo from "@/lib/logos/typescript"
+import GitLogo from "@/lib/logos/git"
+import VSCodeLogo from "@/lib/logos/vscode"
+import PostmanLogo from "@/lib/logos/postman"
+import TailwindLogo from "@/lib/logos/tailwind"
+import ZustandLogo from "@/lib/logos/zustand"
+import DockerLogo from "@/lib/logos/docker"
 import { Logo } from "./definitions"
 
 
 const logos = {
-    react: {
-        title: 'React',
-        src: ReactLogo,
-        class: '',
-    },
-    node: {
-        title: 'NodeJS',
-        src: NodeLogo,
-        class: '',
-    },
-    postgres: {
-        title: 'PostgreSQL',
-        src: PostgresLogo,
-        class: '',
-    },
-    express: {
-        title: 'Express',
-        src: ExressLogo,
-        class: 'express',
-    },
-    next: {
-        title: 'NextJS',
-        src: NextLogo,
-        class: 'next',
-    },
-    vite: {
-        title: 'Vite',
-        src: ViteLogo,
-        class: '',
-    },
-    ejs: {
-        title: 'EJS',
-        src: EjsLogo,
-        class: '',
-    },
-    prisma: {
-        title: 'Prisma',
-        src: PrismaLogo,
-        class: 'prisma',
-    },
-    typeScript: {
-        title: 'TypeScript',
-        src: TypeScriptLogo,
-        class: '',    
-    },
-    vscode: {
-        title: 'VSCode',
-        src: VSCodeLogo,
-        class: '',    
-    },
-    git: {
-        title: 'Git',
-        src: GitLogo,
-        class: '',    
-    },
-    postman: {
-        title: 'Postman',
-        src: PostmanLogo,
-        class: '',    
-    },
-    tailwind: {
-        title: 'TailwindCSS',
-        src: TailwindLogo,
-        class: '',    
-    },
+    react: ReactLogo,
+    node: NodeLogo,
+    postgres: PostgresLogo,
+    express: ExpressLogo,
+    next: NextLogo,
+    vite: ViteLogo,
+    ejs: EjsLogo,
+    prisma: PrismaLogo,
+    typeScript: TypeScriptLogo,
+    vscode: VSCodeLogo,
+    git: GitLogo,
+    postman: PostmanLogo,
+    tailwind: TailwindLogo,
+    zustand: ZustandLogo,
+    docker: DockerLogo
 } as const satisfies Record<string, Logo>;
 
 export default logos;

@@ -57,6 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   --shadow: #bebebe;
   --picture-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
   --card-background: white;
+  --card-second-bg: #fff5f7;
   --text-secondary:  #5a6a87;
   --borders: #e5e7eb;
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -70,6 +71,9 @@ h1, h2, h3, h4, h5, h6 {
   --input-border: #cccccc;
   --input-focus: #2563eb;
   --input-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+  --stack-bg: #e4e3e3;
+  --stack-border: #6e07f382;
+  --stack-card-hover: 0px 0px 6px #6e07f3b0;
 }
 
 :root.dark {
@@ -81,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   --shadow: #484747;
   --picture-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), 0 0 5px rgba(255, 255, 255, 0.05);
   --card-background: #1e1e1e;
+  --card-second-bg: #141313;
   --text-secondary:  #8b8b8b;
   --borders: #2c2c2c;
   --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.1), 0 0 5px rgba(255, 255, 255, 0.05);
@@ -94,6 +99,9 @@ h1, h2, h3, h4, h5, h6 {
   --input-border: #444;
   --input-focus: #facc15;
   --input-shadow: 0 0 0 3px rgba(250, 204, 21, 0.3);
+  --stack-bg: #443737;
+  --stack-border: #facc155f;
+  --stack-card-hover: 0px 0px 6px #facc1580;
 }
 
 /* body::before {

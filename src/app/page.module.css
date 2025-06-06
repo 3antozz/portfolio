@@ -3,11 +3,11 @@
 }
 
 .home > * {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
-.home h2 {
-    margin-bottom: 1.5rem;
+.home section > h2, .home > h2 {
+    margin-bottom: 3rem;
     text-align: center;
 }
 
