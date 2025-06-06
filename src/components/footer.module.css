@@ -1,6 +1,4 @@
 .footer {
-    /* display: flex;
-    flex-direction: column; */
     border-top: 2px solid var(--shadow);
 }
 
@@ -41,7 +39,7 @@
 }
 
 .links > a {
-    width: clamp(2.5rem, 4.5vw, 2.7rem);
+    width: clamp(2.3rem, 6vw, 2.5rem);
     padding: 0.3rem;
     aspect-ratio: 1;
     overflow: hidden;

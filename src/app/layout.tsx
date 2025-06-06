@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import ScrollButton from "@/components/scrollBtn";
 import FadeWrapper from "@/components/FadeInWhenVisible";
 import { Metadata } from 'next';
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: {
@@ -120,6 +121,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Analytics/>
         <FadeWrapper />
         <Header />
         {children}
