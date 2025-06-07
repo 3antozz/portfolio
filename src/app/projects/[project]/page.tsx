@@ -22,7 +22,7 @@ export async function generateMetadata(
     title: title,
     description: `${title}, ${text_description}`,
     openGraph: {
-      title: title,
+      title: `Yacine Belahadji | ${title}`,
       description: `${title}, ${text_description}`,
       url: new URL(`${process.env.WEBSITE_URL!}/projects/${project}`),
       type: "website",
@@ -36,7 +36,7 @@ export async function generateMetadata(
       ],
     },
     twitter: {
-        title: title,
+        title: `Yacine Belahadji | ${title}`,
         description: `${title}, ${text_description}`,
         site: '@3antozzinho',
         images: [
