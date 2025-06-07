@@ -36,6 +36,8 @@
 
 .links img {
     border-radius: 50%;
+    transition: filter 600ms ease;
+    /* transition-delay: 200ms; */
 }
 
 .links > a {
@@ -46,7 +48,7 @@
     align-content: center;
     border-radius: 50%;
     border: 2px solid var(--text-clr);
-    transition: background-color 350ms;
+    transition: background-color 600ms ease, transform 350ms ease;
 }
 
 :global(html.dark) .links img, :global(html.dark) .links svg {
@@ -55,7 +57,8 @@
 
 .links > a:hover {
     background-color: var(--accent);
-    border: none;
+    /* border: 3px solid var(--accent);
+    transform: scale(1.2); */
 }
 
 :global(html.light) .links > a:hover img, :global(html.light) .links > a:hover svg {

@@ -11,14 +11,24 @@
     text-decoration: none;
     color: inherit;
     font-family: var(--font-geist-mono);
+    padding: 0.25rem 0.8rem;
+    border-radius: 10px;
+    transition: background-color 250ms ease;
+}
+
+.nav a:not(.active):hover {
+    color: var(--btn-text);
+    font-weight: bold;
+    background-color: var(--accent);
 }
 
 .nav .active {
-    color: var(--link-hover);
-    font-weight: bold;
+    color: var(--btn-text);
+    font-weight: 800;
+    background-color: var(--accent);
 }
 
-.nav a::after {
+/* .nav a::after {
     display: block;
     content: "";
     opacity: 0;
@@ -35,4 +45,4 @@
     opacity: 1;
     transform: translateX(0);
     transform: scaleX(1);
-}
+} */

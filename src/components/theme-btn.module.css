@@ -31,7 +31,7 @@
 } */
 
 .button:hover svg {
-    stroke: red !important;
+    stroke: var(--accent) !important;
 }
 
 @media (max-width: 678px) {

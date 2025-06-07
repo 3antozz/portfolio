@@ -106,6 +106,10 @@ h1, h2, h3, h4, h5, h6 {
   --stack-shadow: -4px -1px 20px 0px #00000085;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   position: relative;
   padding: 10dvh 2rem; 
@@ -113,7 +117,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   font-family: var(--font-geist-sans);
   background-color: var(--background);
-  overflow-x: hidden;
   color: var(--text-clr);
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   font-weight: 350;

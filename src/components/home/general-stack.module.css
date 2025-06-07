@@ -72,10 +72,10 @@
     min-height: 17rem;
 }
 
-.wrapper:hover {
+/* .wrapper:hover {
     transform: scale(1.02) !important;
     box-shadow: var(--stack-card-hover);
-}
+} */
 
 .tech {
     display: flex;
