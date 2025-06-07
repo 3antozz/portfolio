@@ -12,7 +12,7 @@ function Section ({list, title, Icon} : {list: Logo[], title: string, Icon: Reac
                 <Icon />
                 <h3>{title}</h3>
             </div>
-            <ul className={styles.tech}>
+            <ul translate="no" className={styles.tech}>
             {list.map((tech, index) => 
             <li key={index} className={styles.logo}>
                 <p>{tech.title}</p>

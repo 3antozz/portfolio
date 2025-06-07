@@ -7,7 +7,6 @@
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    /* animation: fadeIn 450ms ease-out both; */
 }
 
 .hero h1 {
@@ -54,7 +53,7 @@
     left: 0;
     content: "";
     width: 100%;
-    height: 2px;
+    height: 1px;
     /* transform: translateX(-50%); */
     transition: transform 200ms ease;
 }
@@ -76,7 +75,7 @@
 }
 
 .hero p > a:hover::after {
-    transform: translateY(250%) scaleY(1.4);
+    transform: translateY(250%) scaleY(3);
 }
 
 .hero p > a:hover {

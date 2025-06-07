@@ -7,7 +7,7 @@ export default function TechStack({stack} : {stack: Stack}) {
     return (
     <div className={styles.stack}>
         <div className={styles.wrapper}>
-            <ul className={styles.frontend}>
+            <ul translate="no" className={styles.frontend}>
                 {logos.map((logo, index) => (
                 <li key={index} className={styles.logo}>
                     <Image key={logo.title} className={styles[logo.class]} title={logo.title} src={logo.src || 'string'} alt={`${logo.title} logo`} unoptimized />
