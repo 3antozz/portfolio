@@ -20,7 +20,7 @@ export default function Project({ project, featured = false, inversed = false, i
                     {features.map((feature, index) => <li key={index}><CircleCheck color="var(--accent)"/><p>{feature}</p></li>)}
                 </ul>
                 <Stack logos={logos}/>
-                <Link href={featured ? '/projects' : route}>{featured ? 'See All Projects' : 'Project Details'} <ChevronRight  /></Link>
+                <Link aria-label="Breadcrumb" href={featured ? '/projects' : route}>{featured ? 'See All Projects' : 'Project Details'} <ChevronRight  /></Link>
             </div>
         </section>
     )
