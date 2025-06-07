@@ -16,6 +16,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Yacine Belahadji | Web Developer',
     description: 'Yacine Belahadji is a full-stack web developer building performant, modern web applications using React, Next.js, and Express.js.',
+    url: new URL(process.env.WEBSITE_URL!),
+    type: "profile",
     images: [
       {
         url: '/opengraph-image.jpg',
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Yacine Belahadji | Web Developer',
     description: 'Yacine Belahadji is a full-stack web developer building performant, modern web applications using React, Next.js, and Express.js.',
+    site: 'https://yacinedev.com',
     images: [
       {
         url: '/opengraph-image.jpg',
