@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   openGraph: {
       title: 'Yacine Belahadji | Projects',
       description: 'A collection of full-stack projects by Yacine Belahadji, built with technologies like React, Next.js, Express.js, and Postgresql.',
+      url: new URL(`${process.env.WEBSITE_URL!}/projects`),
+      type: "website",
       images: [
           {
               url: '/opengraph-image.jpg',
@@ -21,6 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Yacine Belahadji | Projects',
     description: 'A collection of full-stack projects by Yacine Belahadji, built with technologies like React, Next.js, Express.js, and Postgresql.',
+    site: '@3antozzinho',
     images: [
       {
         url: '/opengraph-image.jpg',

@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Yacine Belahadji | About',
         description: 'Learn more about Yacine Belahadji, a full-stack developer passionate about crafting fast, scalable web apps with modern JavaScript frameworks like React, Next.js, and Express.js.',
+        url: new URL(`${process.env.WEBSITE_URL!}/about`),
+        type: "website",
         images: [
             {
                 url: '/opengraph-image.jpg',
@@ -20,6 +22,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Yacine Belahadji | About',
     description: 'Learn more about Yacine Belahadji, a full-stack developer passionate about crafting fast, scalable web apps with modern JavaScript frameworks like React, Next.js, and Express.js.',
+    site: '@3antozzinho',
     images: [
       {
         url: '/opengraph-image.jpg',

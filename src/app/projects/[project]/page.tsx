@@ -24,6 +24,8 @@ export async function generateMetadata(
     openGraph: {
       title: title,
       description: `${title}, ${text_description}`,
+      url: new URL(`${process.env.WEBSITE_URL!}/${project}`),
+      type: "website",
       images: [
           {
               url: '/opengraph-image.jpg',
@@ -36,6 +38,7 @@ export async function generateMetadata(
     twitter: {
         title: title,
         description: `${title}, ${text_description}`,
+        site: '@3antozzinho',
         images: [
         {
             url: '/opengraph-image.jpg',

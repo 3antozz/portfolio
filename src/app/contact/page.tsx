@@ -7,6 +7,8 @@ export const metadata: Metadata = {
   openGraph: {
       title: 'Yacine Belahadji | Contact',
       description: 'Get in touch with Yacine Belahadji for freelance or full-time opportunities in full-stack web development.',
+      url: new URL(`${process.env.WEBSITE_URL!}/contact`),
+      type: "website",
       images: [
           {
               url: '/opengraph-image.jpg',
@@ -19,6 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Yacine Belahadji | Contact',
     description: 'Get in touch with Yacine Belahadji for freelance or full-time opportunities in full-stack web development.',
+    site: '@3antozzinho',
     images: [
       {
         url: '/opengraph-image.jpg',

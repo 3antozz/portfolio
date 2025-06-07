@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     title: 'Yacine Belahadji | Web Developer',
     description: 'Yacine Belahadji is a full-stack web developer building performant, modern web applications using React, Next.js, and Express.js.',
-    site: 'https://yacinedev.com',
+    site: '@3antozzinho',
     images: [
       {
         url: '/opengraph-image.jpg',
