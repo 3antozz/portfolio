@@ -7,6 +7,23 @@ import GeneralStack from "@/components/home/general-stack";
 export default function Home() {
   return (
     <main className={styles.home}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yacinedev.com"
+              },
+            ]
+          })
+        }}
+      />
       <Hero />
       <h2>Technologies Stack</h2>
       <GeneralStack />

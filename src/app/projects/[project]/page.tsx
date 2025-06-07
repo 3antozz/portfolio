@@ -24,7 +24,7 @@ export async function generateMetadata(
     openGraph: {
       title: title,
       description: `${title}, ${text_description}`,
-      url: new URL(`${process.env.WEBSITE_URL!}/${project}`),
+      url: new URL(`${process.env.WEBSITE_URL!}/projects/${project}`),
       type: "website",
       images: [
           {
@@ -62,6 +62,35 @@ export default async function Project(props: { params: Promise<{ project: Projec
     const {title, description, features, brief, showcase, stack, github, demo } = projectObj;
     return (
         <main className={styles.project}>
+            <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://yacinedev.com"
+                    },
+                    {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Projects",
+                    "item": "https://yacinedev.com/projects"
+                    },
+                    {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": `${title}`,
+                    "item": `https://yacinedev.com/projects/${project}`
+                    },
+                ]
+                })
+            }}
+            />
             <section className={styles.header}>
                 <h1>{title}</h1>
                 <p>{description}</p>

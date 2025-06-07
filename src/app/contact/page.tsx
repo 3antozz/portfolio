@@ -35,7 +35,31 @@ export const metadata: Metadata = {
 
 export default function Contact() {
   return (
+    
     <main className={styles.contact}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yacinedev.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://yacinedev.com/contact"
+              },
+            ]
+          })
+        }}
+      />
       <FormListener />
       <section className={styles.header}>
         <h1>Contact Me</h1>

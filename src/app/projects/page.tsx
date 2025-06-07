@@ -49,6 +49,29 @@ export default async function Projects() {
   );
   return (
     <main className={styles.projects}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://yacinedev.com"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projects",
+                "item": "https://yacinedev.com/projects"
+              },
+            ]
+          })
+        }}
+      />
       <div className={styles.headers}>
         <h1>Projects</h1>
         <p>Some projects I built in my learning journey.</p>

@@ -38,6 +38,29 @@ export const metadata: Metadata = {
 export default function About() {
   return (
       <main className={styles.page}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://yacinedev.com"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "About",
+                  "item": "https://yacinedev.com/about"
+                },
+              ]
+            })
+          }}
+        />
         <section className={styles.intro}>
             <h1 className={styles.heading1}>About Me</h1>
             <p className={styles.paragraph}>

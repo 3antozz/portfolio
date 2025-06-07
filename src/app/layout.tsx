@@ -87,41 +87,6 @@ export default function RootLayout({
             `,
           }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                {
-                  "@type": "ListItem",
-                  "position": 1,
-                  "name": "Home",
-                  "item": "https://yacinedev.com"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 2,
-                  "name": "About",
-                  "item": "https://yacinedev.com/about"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 3,
-                  "name": "Projects",
-                  "item": "https://yacinedev.com/projects"
-                },
-                {
-                  "@type": "ListItem",
-                  "position": 4,
-                  "name": "Contact",
-                  "item": "https://yacinedev.com/contact"
-                }
-              ]
-            })
-          }}
-        />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Analytics/>
