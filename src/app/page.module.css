@@ -1,8 +1,8 @@
-.home {
+/* .home {
     max-width: 68rem;
-}
+} */
 
-.home > * {
+.home > *:not(:last-child) {
     margin-bottom: 5rem;
 }
 

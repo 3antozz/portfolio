@@ -1,8 +1,8 @@
 .card a img {
-    object-fit: contain;
-    border-radius: 15px;
+    object-fit: cover;
+    object-position: top;
     width: 100%;
-    box-shadow: var(--picture-shadow);
+    height: 40rem;
 }
 
 .description {
@@ -10,10 +10,38 @@
 }
 
 .card {
-    display: flex;
+    position: relative;
+    /* display: flex;
     align-items: center;
     border-radius: 15px;
-    gap: 1rem;
+    gap: 1rem; */
+}
+
+.card::before {
+    z-index: 9;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--accent); */
+    pointer-events: none;
+}
+
+.card.left::before {
+    left: 0;
+    background: linear-gradient(
+        to right,
+        var(--project-gradient)
+    );
+}
+
+.card.inversed::before {
+    right: 0;
+    background: linear-gradient(
+        to left,
+        var(--project-gradient)
+    );
 }
 
 .card h2 {
@@ -25,16 +53,16 @@
     transition: filter 350ms ease, transform 350ms ease;
     align-self: center;
     border-radius: 15px;
-    width: clamp(25rem, 45vw, 40rem);
+    width: 100%;
     flex: 1;
 }
 
-.card > a:hover {
+/* .card > a:hover {
     filter: brightness(0.8);
     transform: scale(1.02);
-}
+} */
 
-.card > a::after {
+/* .card > a::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -47,11 +75,24 @@
 
 .card > a:hover::after {
   opacity: 1;
+} */
+
+.left .right {
+    left: 6vw;
+}
+
+.inversed .right {
+    right: 6vw;
 }
 
 .right {
+    z-index: 99;
     padding: 1rem;
-    max-width: 35%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--btn-text);
+    max-width: 30rem;
 }
 
 .right > *:nth-child(2), .right > *:nth-child(4){
@@ -91,16 +132,19 @@
     text-decoration: none;
     text-align: center;
     transition: background-color 0.3s, transform 0.2s;
-    background-color: var(--accent);
-    color: var(--btn-text);
+    background-color: var(--background);
+    border: 2px solid var(--btn-text);
+    color: var(--accent);
 }
 
 .right a svg {
     flex-shrink: 0;
+    stroke-width: 4px;
 }
 
 .right a:hover {
-    background-color: var(--accent-hover);
+    background-color: var(--accent);
+    color: var(--btn-text);
     transform: scale(1.03);
 }
 
@@ -113,7 +157,7 @@
     order: 1;
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     .card {
         flex-direction: column;
         align-items: stretch;
@@ -124,9 +168,9 @@
     .card h2 {
         text-align: center;
     }
-    /* .right a img {
+    .right a img {
         width: 100%
-    } */
+    }
     .card > a {
         width: 100%;
     }
@@ -144,4 +188,4 @@
     .right {
         padding: 1rem 0.5rem;
     }
-}
+} */

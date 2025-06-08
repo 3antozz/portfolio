@@ -1,23 +1,24 @@
-.projects {
+/* .projects {
     max-width: 80rem;
-}
+} */
 
-.projects > * {
+/* .projects > * {
     margin-bottom: 5rem;
-}
+} */
 
 .projects h1 {
     margin-bottom: 1rem;
 }
 
 .headers {
-    max-width: 68rem;
+    /* max-width: 68rem; */
     margin: 0 auto;
+    text-align: center;
     margin-bottom: 5rem;
 }
 
 .headers > p {
-    font-size: clamp(1.2rem, 4vw, 1.4rem) !important;
+    font-size: clamp(1.4rem, 4.5vw, 1.6rem) !important;
 }
 
 @media (max-width: 1000px) {

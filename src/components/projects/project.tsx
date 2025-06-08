@@ -11,13 +11,13 @@ export default function Project({ project, featured = false, inversed = false, i
     const { title, src, description, features, stack, route } = project;
     const logos = [...stack.frontend, ...stack.backend]
     return (
-        <section className={styles.card} data-aos={index > 0 ? "fade-up" : ""}>
+        <section className={inversed ? `${styles.card} ${styles.inversed}` : `${styles.card} ${styles.left}`} data-aos={index > 0 ? "fade-up" : ""}>
             <Link href={featured ? '/projects' : route} className={inversed ? `${styles.inversed}` : ""} aria-label={featured ? 'See All Projects' : `${title} project details`}><Image src={src} alt={`${title} interface image`} priority={index > 0 ? false : true} /></Link>
-            <div className={styles.right} style={{maxWidth: featured ? "40%" : "35%"}}>
+            <div className={styles.right}>
                 <h2>{title}</h2>
                 <p className={styles.description}>{description}</p>
                 <ul>
-                    {features.map((feature, index) => <li key={index}><CircleCheck color="var(--accent)"/><p>{feature}</p></li>)}
+                    {features.map((feature, index) => <li key={index}><CircleCheck color="var(--btn-text)"/><p>{feature}</p></li>)}
                 </ul>
                 <Stack logos={logos}/>
                 <Link aria-label="Breadcrumb" href={featured ? '/projects' : route}>{featured ? 'See All Projects' : 'Project Details'} <ChevronRight  /></Link>

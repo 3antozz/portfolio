@@ -1,5 +1,5 @@
 import { LatestProject } from "./definitions";
-import OdinBookImg from "@/../public/projects/odinbook/interface2.png"
+import OdinBookImg from "@/../public/projects/odinbook/interface.png"
 import NodeLogo from "./logos/node";
 import ExpressLogo from "./logos/express";
 import PostgresLogo from "./logos/postgres";
