@@ -52,6 +52,7 @@
     .header {
         flex-direction: column;
         margin-bottom: 3rem;
+        margin-left: 0;
     }
     .right {
         width: 100%;

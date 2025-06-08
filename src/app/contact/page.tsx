@@ -69,20 +69,20 @@ export default function Contact() {
         <div className={styles.firstRow}>
           <div>
             <label htmlFor="name">Name <span>*</span></label>
-            <input name="name" id="name" required />
+            <input name="name" id="name" required autoComplete="name" />
           </div>
           <div>
             <label htmlFor="email">Email <span>*</span></label>
-            <input type="email" name="email" id="email" required  />
+            <input type="email" name="email" id="email" required autoComplete="email" />
           </div>
         </div>
         <div>
           <label htmlFor="subject">Subject <span>*</span></label>
-          <input name="subject" id="subject" required  />
+          <input name="subject" id="subject" required autoComplete="off" />
         </div>
         <div>
           <label htmlFor="message">Message <span>*</span></label>
-          <textarea name="message" id="message" required ></textarea>
+          <textarea name="message" id="message" required  autoComplete="off"></textarea>
         </div>
         <div className={styles.buttonDiv}>
           <button>Send Message</button>

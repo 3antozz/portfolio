@@ -145,7 +145,7 @@
 .top p {
     font-weight: 500;
     line-height: 0;
-    color: var(--link-hover);
+    color: var(--accent);
 }
 
 .note .top {

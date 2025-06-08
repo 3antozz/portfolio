@@ -124,7 +124,7 @@ export default async function Project(props: { params: Promise<{ project: Projec
                     </div>
                     <div className={styles.note}>
                         <div className={styles.top}>
-                            <CircleAlert size={19} color="var(--link-hover)" />
+                            <CircleAlert size={19} color="var(--accent)" />
                             <p>Note</p>
                         </div>
                         <p>Demo is hosted with free tier services, first load might take some time.</p>

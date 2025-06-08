@@ -2,7 +2,7 @@
     max-width: 68rem;
 } */
 
-.home > *:not(:last-child) {
+.home > *:not(:last-child):not(h2) {
     margin-bottom: 5rem;
 }
 

@@ -2,9 +2,9 @@
     max-width: 80rem;
 } */
 
-/* .projects > * {
-    margin-bottom: 5rem;
-} */
+.projects > *:not(section) {
+    padding: 0 0.5rem;
+}
 
 .projects h1 {
     margin-bottom: 1rem;
@@ -18,13 +18,13 @@
 }
 
 .headers > p {
-    font-size: clamp(1.4rem, 4.5vw, 1.6rem) !important;
+    font-size: clamp(1.2rem, 4.5vw, 1.6rem) !important;
 }
 
 @media (max-width: 1000px) {
-    .projects > *:not(:last-child) {
+    /* .projects > *:not(:last-child) {
         margin-bottom: 2rem;
-    }
+    } */
     .headers > * {
         text-align: center;
     }
@@ -33,5 +33,8 @@
 @media (max-width: 768px) {
     .projects > p, .projects > h1 {
         text-align: center;
+    }
+    .projects > section {
+        margin-bottom: 1rem;
     }
 }

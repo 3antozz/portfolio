@@ -1,11 +1,12 @@
 .hero {
-    padding: 2rem;
-    border-radius: 15px;
+    padding: 3rem 1rem;
+    /* border-radius: 15px; */
     background-color: var(--card-background);
     border: 1px solid var(--borders);
     box-shadow: var(--card-shadow);
     display: flex;
     align-items: flex-start;
+    padding-left: 15vw;
     gap: 1rem;
 }
 
@@ -81,10 +82,10 @@
     transform: translateY(250%) scaleY(3);
 }
 
-.hero p > a:hover {
+/* .hero p > a:hover {
     color: var(--link-hover);
     border-bottom: none !important;
-}
+} */
 
 .ctaButtons {
     display: flex;
@@ -137,6 +138,9 @@
 }
 
 @media (max-width: 678px) {
+    .hero {
+        padding-left: 1rem;
+    }
     .hero > svg {
         display: none;
     }

@@ -1,6 +1,7 @@
 .page {
     max-width: 55rem;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .page p {
