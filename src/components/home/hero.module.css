@@ -1,13 +1,18 @@
 .hero {
-    padding: 3rem 1rem;
-    /* border-radius: 15px; */
     background-color: var(--card-background);
     border: 1px solid var(--borders);
     box-shadow: var(--card-shadow);
+}
+.hero > div {
+    padding: 3rem 1.5rem;
     display: flex;
     align-items: flex-start;
-    padding-left: 15vw;
     gap: 1rem;
+}
+
+.hero > div {
+    max-width: 60rem;
+    margin: auto;
 }
 
 .hero h1 {
@@ -137,11 +142,11 @@
     transform: scale(1.03);
 }
 
-@media (max-width: 678px) {
-    .hero {
+@media (max-width: 768px) {
+    .hero > div {
         padding-left: 1rem;
     }
-    .hero > svg {
+    .hero > div > svg {
         display: none;
     }
     .right span {
@@ -158,7 +163,7 @@
 }
 
 @media (max-width: 500px) {
-  .hero {
+  .hero > div {
     padding: 2rem 1rem;
   }
 }

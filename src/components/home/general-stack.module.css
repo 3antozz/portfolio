@@ -19,7 +19,7 @@
     border-radius: 10px;
     background-color: var(--accent);
     stroke: var(--btn-text);
-    width: clamp(2.2rem, 5vw, 2.6rem);
+    width: clamp(2.4rem, 7vw, 2.6rem);
     flex-shrink: 0;
 }
 .stack {
@@ -38,12 +38,11 @@
 }
 
 .stack h3 {
-    /* font-family: var(--font-geist-mono); */
     font-weight: 450;
 }
 
 .stack img {
-    width: clamp(1.6rem, 3.5vw, 1.8rem);
+    width: clamp(1.6rem, 3.7vw, 2.2rem);
     flex-shrink: 0;
 }
 
@@ -53,10 +52,10 @@
 
 .logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 0.6rem;
     justify-content: center;
-    background-color: var(--stack-bg);
     border-radius: 15px;
     padding: 0.3rem 1rem;
 }
@@ -67,15 +66,9 @@
     align-items: center;
     gap: 0.7rem;
     width: 100%;
-    /* flex: 1; */
     max-width: 21rem;
     min-height: 17rem;
 }
-
-/* .wrapper:hover {
-    transform: scale(1.02) !important;
-    box-shadow: var(--stack-card-hover);
-} */
 
 .tech {
     display: flex;
@@ -112,9 +105,10 @@
     }
 
     .wrapper:nth-child(2) h3 {
-        font-weight: 450;
+        font-weight: 700;
     }
     .wrapper {
         min-height: 13rem;
+        padding: 1.5rem 0.5rem;
     }
 }

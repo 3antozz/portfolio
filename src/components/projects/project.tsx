@@ -14,7 +14,7 @@ export default function Project({ project, featured = false, inversed = false, i
         <section className={inversed ? `${styles.card} ${styles.inversed}` : `${styles.card} ${styles.left}`} data-aos={index > 0 ? "fade-up" : ""}>
             <Link href={featured ? '/projects' : route} className={inversed ? `${styles.inversed}` : ""} aria-label={featured ? 'See All Projects' : `${title} project details`}><Image src={src} alt={`${title} interface image`} priority={index > 0 ? false : true} /></Link>
             <div className={styles.right}>
-                <h2>{title}</h2>
+                {featured ? <h3>{title}</h3> : <h2>{title}</h2>}
                 <p className={styles.description}>{description}</p>
                 <ul>
                     {features.map((feature, index) => <li key={index}><CircleCheck color="var(--btn-text)"/><p>{feature}</p></li>)}

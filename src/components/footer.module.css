@@ -97,7 +97,7 @@
     margin: auto;
 }
 
-@media (max-width: 678px) {
+@media (max-width: 768px) {
     .top {
         flex-direction: column;
         justify-content: center;

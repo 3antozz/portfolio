@@ -1,12 +1,11 @@
 .header {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    margin-left: 15vw;
     flex-wrap: wrap;
+    max-width: 60rem;
     gap: 2rem;
+    padding: 0 2rem;
     margin-bottom: 4rem;
-    /* animation: fadeIn 450ms ease-out both; */
 }
 
 .header img {
@@ -23,6 +22,15 @@
     transition: transform 350ms ease;
 }
 
+.right {
+    padding: 0 0.1rem;
+}
+
+.right > button {
+    display: none;
+}
+
+
 .header > a:hover {
     transform: scale(1.05);
 }
@@ -31,7 +39,6 @@
 .name {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 2rem;
 }
 
@@ -48,14 +55,23 @@
     }
 }
 
-@media (max-width: 678px) {
+@media (max-width: 768px) {
     .header {
         flex-direction: column;
         margin-bottom: 3rem;
         margin-left: 0;
+        padding: 0;
     }
     .right {
         width: 100%;
+    }
+
+    .right > button {
+        display: block;
+    }
+
+    .name {
+        justify-content: center;
     }
 }
 

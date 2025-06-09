@@ -25,12 +25,11 @@ export default function Home() {
         }}
       />
       <Hero />
-      <h2>Technologies Stack</h2>
       <GeneralStack />
-      <section className={styles.project}>
+      <div className={styles.project}>
         <h2>Latest Project</h2>
         <Project project={LastProject} featured inversed={false} />
-      </section>
+      </div>
     </main>
   );
 }

@@ -1,13 +1,11 @@
 .button {
     padding: 0;
-    /* position: absolute;
-    top: 15px;
-    right: 50px; */
     background: none;
     border: none;
     cursor: pointer;
     border-radius: 50%;
     transition: transform 350ms ease;
+    padding: 0.3rem;
 }
 
 .button:hover {
@@ -16,6 +14,7 @@
 
 .button svg {
     stroke: var(--text-clr);
+    width: clamp(1.5rem, 5vw, 1.8rem);
 }
 
 :global(html.light) .button:hover {
@@ -34,7 +33,7 @@
     stroke: var(--accent) !important;
 }
 
-@media (max-width: 678px) {
+@media (max-width: 768px) {
     .button {
         position: absolute;
         top: 1rem;

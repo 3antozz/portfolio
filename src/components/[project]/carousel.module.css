@@ -1,6 +1,7 @@
 .carousel {
-    max-width: 60rem;
+    max-width: 70rem;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .slide {
@@ -20,7 +21,7 @@
 .caption {
     font-family: var(--font-geist-mono);
     margin-top: 0.5rem;
-    font-size: clamp(1.2rem, 5vw, 2rem);
+    font-size: clamp(1.2rem, 5vw, 2rem) !important;
     color: var(--text-secondary);
     text-align: center;
 }
@@ -93,8 +94,11 @@
     transform: scale(1.4);
 }
 
-@media (max-width: 678px) {
+@media (max-width: 768px) {
     .slide {
+        padding: 0;
+    }
+    .carousel {
         padding: 0;
     }
     .nav {

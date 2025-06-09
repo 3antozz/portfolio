@@ -148,6 +148,10 @@
     transform: scale(1.03);
 }
 
+.right h3, .right h2 {
+    font-weight: 650;
+}
+
 .right span {
     font-size: 2rem;
     line-height: 0;

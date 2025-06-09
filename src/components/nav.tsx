@@ -3,6 +3,7 @@ import styles from "./nav.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState, useEffect } from "react";
+import ThemeBtn from "@/components/theme-btn";
 
 const routes = [
     { label: 'OVERVIEW', path: '/' },
@@ -29,6 +30,10 @@ export default function Nav() {
     useEffect(() => {
         const updateIndicator = () => {
             const index = routes.findIndex(route => pathname === route.path);
+            if(index === -1) {
+                setReady(false)
+                return;
+            }
             const linkElement = linkRefs.current[index];
             if(linkElement && containerRef.current) {
                 const containerRect = containerRef.current.getBoundingClientRect();
@@ -51,9 +56,13 @@ export default function Nav() {
         };
     }, [pathname])
     return (
+        <>
             <nav className={styles.nav} ref={containerRef}>
                 {isReady && <div className={styles.indicator} style={{ left: `${indicatorStyle.left}px`, top: `${indicatorStyle.top}px`, width: `${indicatorStyle.width}px`, height: `${indicatorStyle.height}px` }}></div>}
                 {routes.map((route, index) => <Link key={route.label} ref={element => {linkRefs.current[index] = element}} aria-label="Breadcrumb" className={`${pathname === route.path ? styles.active : ''} ${isReady ? styles.ready : ''}`} href={route.path}>{route.label}</Link>)}
+                <ThemeBtn />
             </nav>
+            <ThemeBtn />
+        </>
     );
 }
