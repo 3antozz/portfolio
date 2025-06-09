@@ -1,6 +1,5 @@
 import styles from "./page.module.css";
 import Project from "@/components/projects/project";
-// import projects from "@/lib/projects";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -45,7 +44,7 @@ const projectList = [
 
 export default async function Projects() {
   const projects = await Promise.all(
-    projectList.map((project) => import(`@/lib/projects/${project}`).then(mod => mod.default))
+    projectList.map((project) => import(`@/lib/projects-overview/${project}`).then(mod => mod.default))
   );
   return (
     <main className={styles.projects}>

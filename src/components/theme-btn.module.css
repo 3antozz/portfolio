@@ -5,7 +5,7 @@
     cursor: pointer;
     border-radius: 50%;
     transition: transform 350ms ease;
-    padding: 0.3rem;
+    padding: 0.25rem 0.3rem;
 }
 
 .button:hover {
@@ -14,7 +14,7 @@
 
 .button svg {
     stroke: var(--text-clr);
-    width: clamp(1.5rem, 5vw, 1.8rem);
+    width: clamp(1.5rem, 5vw, 1.6rem);
 }
 
 :global(html.light) .button:hover {

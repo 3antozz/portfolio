@@ -1,14 +1,14 @@
-import { LatestProject } from "./definitions";
-import OdinBookImg from "@/../public/projects/odinbook/interface.png"
-import NodeLogo from "./logos/node";
-import ExpressLogo from "./logos/express";
-import PostgresLogo from "./logos/postgres";
-import PrismaLogo from "./logos/prisma";
-import ReactLogo from "./logos/react";
+import { ProjectOverview } from "../definitions";
+import OdinBookImg from "@/../public/projects/odinbook/interface2.png"
+import NodeLogo from "../logos/node";
+import ExpressLogo from "../logos/express";
+import PostgresLogo from "../logos/postgres";
+import PrismaLogo from "../logos/prisma";
+import ReactLogo from "../logos/react";
 
 
 
-const LastProject : LatestProject = {
+const OdinbookProject : ProjectOverview = {
         title: 'Social Media App',
         src: OdinBookImg,
         description: <>Full-stack <strong>Twitter</strong>-like social media application built for real-time content sharing and interaction.</>,
@@ -25,4 +25,4 @@ const LastProject : LatestProject = {
         },
 }
 
-export default LastProject;
+export default OdinbookProject;

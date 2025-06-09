@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import Hero from "@/components/home/hero";
 import Project from "@/components/projects/project";
-import LastProject from "@/lib/latest-project";
+import LastProject from "@/lib/projects-overview/odinbook";
 import GeneralStack from "@/components/home/general-stack";
 
 export default function Home() {

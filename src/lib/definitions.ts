@@ -31,7 +31,8 @@ export interface Project {
     showcase: Showcase[]
 }
 
-export interface LatestProject {
+
+export interface ProjectOverview {
     title: string, 
     src: StaticImageData,
     description: ReactNode,
