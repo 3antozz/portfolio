@@ -18,12 +18,19 @@
     transition: transform 400ms ease, color 400ms ease;
 }
 
-.nav a:not(.active):hover {
+/* .nav a:not(.active):hover {
     color: var(--accent);
     font-weight: bold;
     transform: scale(1.1);
-}
+} */
 
+@media (hover: hover) and (pointer: fine) {
+    .nav a:not(.active):hover {
+        color: var(--accent);
+        font-weight: bold;
+        transform: scale(1.1);
+    }
+}
 .indicator {
     position: absolute;
     background-color: var(--accent);
@@ -38,7 +45,16 @@
 }
 
 @media (max-width: 768px) {
+    .nav {
+        gap: 0.3rem;
+    }
     .nav button {
         display: none;
     }
 }
+
+/* @media (pointer: coarse) {
+  .nav a:not(.active):hover {
+    all: revert-layer;
+  }
+} */

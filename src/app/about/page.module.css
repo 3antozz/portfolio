@@ -5,7 +5,8 @@
 }
 
 .page p {
-   font-size: clamp(1.1rem, 4vw, 1.3rem)
+   font-size: clamp(1.1rem, 4vw, 1.3rem);
+   text-align: justify;
 }
 
 .intro,
@@ -16,7 +17,12 @@
     margin-bottom: 3rem;
 }
 
-.heading1, .heading2 {
+.heading1 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.heading2 {
     margin-bottom: 1rem;
 }
 
@@ -33,7 +39,7 @@
         margin-bottom: 1.5rem;
     }
 
-    .page h1, .page h2 {
+    .page h2 {
         text-align: center;
     }
 }

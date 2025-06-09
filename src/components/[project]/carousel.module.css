@@ -24,6 +24,7 @@
     font-size: clamp(1.2rem, 5vw, 2rem) !important;
     color: var(--text-secondary);
     text-align: center;
+    font-weight: 500;
 }
 
 .nav {

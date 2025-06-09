@@ -22,10 +22,6 @@
     transition: transform 350ms ease;
 }
 
-.right {
-    padding: 0 0.1rem;
-}
-
 .right > button {
     display: none;
 }
@@ -60,7 +56,7 @@
         flex-direction: column;
         margin-bottom: 3rem;
         margin-left: 0;
-        padding: 0;
+        padding: 0 1rem;
     }
     .right {
         width: 100%;

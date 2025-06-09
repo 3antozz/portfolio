@@ -144,7 +144,7 @@
 
 @media (max-width: 768px) {
     .hero > div {
-        padding-left: 1rem;
+        padding: 2rem 1rem;
     }
     .hero > div > svg {
         display: none;
@@ -162,11 +162,11 @@
     }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .hero > div {
     padding: 2rem 1rem;
   }
-}
+} */
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateX(-20px); }
