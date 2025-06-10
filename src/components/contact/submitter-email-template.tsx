@@ -43,7 +43,7 @@ const SubmitterEmailTemplate = ({ name, subject, message } : {name: string, subj
             time to connect.
           </p>
           <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#333333' }}>
-            I aim to respond to all inquiries as soon as possible. I will get back to you as soon as possible.
+            I aim to respond to all inquiries as soon as possible. Please allow me some time to get back to you.
           </p>
 
           <p style={{ fontSize: '16px', lineHeight: '1.6', color: '#333333', marginTop: '25px' }}>
