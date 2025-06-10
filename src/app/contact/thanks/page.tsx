@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   title: 'Thanks',
 };
 
-export default async function Thanks({searchParams} : {searchParams: {submitted?: string}}) {
-  const { submitted } = await searchParams;
-  if (submitted !== 'true') {
+export default async function Thanks({searchParams} : {searchParams?: Promise<{submitted?: string}>}) {
+  const params = await searchParams;
+  if (params?.submitted!== 'true') {
     redirect('/');
   }
   return (
