@@ -1,3 +1,6 @@
+.project {
+    padding: 0 1rem;
+}
 .project > * {
     margin-bottom: 2rem !important;
 }
@@ -75,14 +78,6 @@
     margin: auto;
     max-width: 45rem;
 }
-
-/* .links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-} */
 
 .links > div:first-of-type {
     display: flex;
