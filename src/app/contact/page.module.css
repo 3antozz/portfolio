@@ -59,7 +59,7 @@
     justify-content: center;
 }
 
-.contact form button {
+.buttonDiv > button {
     width: 100%;
     max-width: 15rem;
     border-radius: 10px;
@@ -72,16 +72,17 @@
     border: none;
 }
 
-.contact form button:hover {
+.buttonDiv > button:hover {
     background-color: var(--accent-hover);
     transform: scale(1.03);
 }
 
+.buttonDiv > button:disabled {
+    background-color: var(--text-secondary);
+}
+
 .contact input, .contact textarea {
     padding: 0.75rem;
-    /* border: 1px solid var(--input-border); */
-    /* border-radius: 8px; */
-    /* background-color: var(--input-bg); */
     background: none;
     border: none;
     border-bottom: 2px solid var(--accent-hover);;
@@ -100,6 +101,15 @@
     outline: none;
     border-radius: 8px;
 }
+
+/* .buttonDiv p {
+    position: fixed;
+    max-width: 20rem;
+    padding: 0.5rem 2rem;
+    top: 0;
+    background-color: red;
+    border-radius: 5px;
+} */
 
 
 

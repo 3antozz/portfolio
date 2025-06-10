@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
-import FormListener from "./form-listener";
 import { Metadata } from 'next';
+import SendButton from "./send-button";
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'Get in touch with Yacine Belahadji for freelance or full-time opportunities in full-stack web development.',
@@ -60,12 +60,11 @@ export default function Contact() {
           })
         }}
       />
-      <FormListener />
       <section className={styles.header}>
         <h1>Contact Me</h1>
         <p>I&apos;m always looking for opportunities and I&apos;d love to hear from you! Whether you have a question, a project idea, or just want to say hi, feel free to reach out.</p>
       </section>
-      <form action="https://formsubmit.co/05bc28d6910b3a4bfe39db68880a739b" method="POST">
+      <form>
         <div className={styles.firstRow}>
           <div>
             <label htmlFor="name">Name <span>*</span></label>
@@ -85,11 +84,8 @@ export default function Contact() {
           <textarea name="message" id="message" required  autoComplete="off"></textarea>
         </div>
         <div className={styles.buttonDiv}>
-          <button>Send Message</button>
+          <SendButton />
         </div>
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="text" name="_honey" style={{display: "none"}} />
-        <input type="hidden" name="_next" value={`${process.env.WEBSITE_URL}/contact/thanks`} />
       </form>
     </main>
   );
