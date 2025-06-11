@@ -27,6 +27,6 @@ export default function ThemeBtn() {
         }
     }
     return (
-        <button aria-label='change theme' title="Change Theme" style={{opacity: hidden ? '0' : '1'}} onClick={switchTheme} className={styles.button}>{theme === 'light' ? <SunMedium /> : <Moon />}</button>
+        <button aria-label='change theme' title="Change Theme" style={{opacity: hidden ? '0' : '1'}} onClick={switchTheme} className={styles.button}>{theme === 'dark' ? <SunMedium /> : <Moon />}</button>
     );
 }
