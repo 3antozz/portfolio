@@ -5,6 +5,9 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'About',
     description: 'Learn more about Yacine Belahadji, a full-stack developer passionate about crafting fast, scalable web apps with modern JavaScript frameworks like React, Next.js, and Express.js.',
+    alternates: {
+      canonical: "https://yacinedev.com/about"
+    },
     openGraph: {
         title: 'Yacine Belahadji | About',
         description: 'Learn more about Yacine Belahadji, a full-stack developer passionate about crafting fast, scalable web apps with modern JavaScript frameworks like React, Next.js, and Express.js.',

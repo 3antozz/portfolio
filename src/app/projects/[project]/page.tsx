@@ -21,6 +21,9 @@ export async function generateMetadata(
   return {
     title: title,
     description: `${title}, ${text_description}`,
+    alternates: {
+      canonical: `https://yacinedev.com/projects/${project}`
+    },
     openGraph: {
       title: `Yacine Belahadji | ${title}`,
       description: `${title}, ${text_description}`,

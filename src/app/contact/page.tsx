@@ -4,6 +4,9 @@ import SendButton from "./send-button";
 export const metadata: Metadata = {
   title: 'Contact',
   description: 'Get in touch with Yacine Belahadji for freelance or full-time opportunities in full-stack web development.',
+  alternates: {
+    canonical: "https://yacinedev.com/contact"
+  },
   openGraph: {
       title: 'Yacine Belahadji | Contact',
       description: 'Get in touch with Yacine Belahadji for freelance or full-time opportunities in full-stack web development.',
