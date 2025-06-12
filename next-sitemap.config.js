@@ -1,4 +1,4 @@
-const projectSlugs = ['odinbook', 'messaging_app', 'blog_page', 'where_is_waldo', 'file_uploader']
+const projectSlugs = ['odinbook', 'messaging_app', 'blog_page', 'where_is_waldo', 'file_uploader', 'battleship']
 module.exports = {
   siteUrl: process.env.WEBSITE_URL,
   generateRobotsTxt: true,

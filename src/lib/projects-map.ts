@@ -4,6 +4,7 @@ export const projectMap = {
   blog_page: () => import('./projects/blog-page'),
   where_is_waldo: () => import('./projects/waldo'),
   file_uploader: () => import('./projects/file-uploader'),
+  battleship: () => import('./projects/battleship'),
 } as const;
 
 export type ProjectSlug = keyof typeof projectMap;
