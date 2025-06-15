@@ -43,8 +43,8 @@ const projectList = [
   "waldo",
   "blog-page",
   "file-uploader",
-  "battleship",
-  "todo_app"
+  "todo_app",
+  "battleship"
 ];
 
 export default async function Projects() {
