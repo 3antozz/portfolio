@@ -20,9 +20,9 @@ export default function Footer() {
                     <Link title="Contact" href="/contact">
                         <Mail style={{ transform: "translateX(2%)"}} color="black" />
                     </Link>
-                    <Link title="Resume" href="/Yacine_BELAHADJI_resume.pdf" target="_blank">
+                    <a title="Resume" href="/Yacine_BELAHADJI_resume.pdf" target="_blank" rel="noopener noreferrer">
                         <FileUser color="black" />
-                    </Link>
+                    </a>
                 </div>
             </div>
             <div className={styles.line}>
