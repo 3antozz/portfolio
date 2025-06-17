@@ -13,7 +13,7 @@ const BlogProject : ProjectOverview = {
         src: BlogImg,
         description: <>Full-stack blog application with <strong>Content Management System</strong> for authors.</>,
         features: [
-            <><strong>Authentification</strong> via username & password.</>,
+            <><strong>Authentication</strong> via username & password.</>,
             <>Interaction with blogs via <strong>comments</strong>.</>,
             <>Separate <strong>Content Management System</strong> for authors.</>,
             <><strong>Rich text editor</strong> for authors.</>,

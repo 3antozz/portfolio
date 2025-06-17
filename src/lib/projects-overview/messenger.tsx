@@ -14,7 +14,7 @@ const MessengerProject : ProjectOverview = {
         description: <>Full-stack messenger application designed to provide seamless messaging communication.</>,
         features: [
             <><strong>Real time</strong> messaging.</>,
-            <><strong>Authentification</strong> with <strong>refresh/access</strong> cookie based jwt tokens.</>,
+            <><strong>Authentication</strong> with <strong>refresh/access</strong> cookie based jwt tokens.</>,
             <><strong>Group</strong> creation and <strong>management</strong>.</>,
             <><strong>Image</strong> sharing capability.</>,
             <>Users live <strong>online status.</strong></>,

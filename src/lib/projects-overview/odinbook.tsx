@@ -14,7 +14,7 @@ const OdinbookProject : ProjectOverview = {
         description: <>Full-stack <strong>Twitter</strong>-like social media application built for real-time content sharing and interaction.</>,
         features: [
             <><strong>Core features:</strong> profiles, posts, followage, likes & comments.</>,
-            <><strong>Authentification</strong> with <strong>Github</strong> or username & password.</>,
+            <><strong>Authentication</strong> with <strong>Github</strong> or username & password.</>,
             <><strong>Real time</strong> interaction updates & notifications.</>,
             <><strong>Image</strong> sharing capability.</>,
         ],

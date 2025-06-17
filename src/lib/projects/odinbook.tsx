@@ -17,7 +17,7 @@ const OdinbookProject : Project = {
         brief: "This was one of the first full-stack projects I created, it's purpose was to tie everything I learned from The Odin Project's course together in a relatively complex project. Social media apps are among the most widely used applications on the web today.",
         features: [
             <><strong>Core features:</strong> profiles, posts, followage, likes & comments.</>,
-            <><strong>Authentification</strong> with <strong>Github</strong> or username & password.</>,
+            <><strong>Authentication</strong> with <strong>Github</strong> or username & password.</>,
             <><strong>Real time</strong> interaction updates & notifications.</>,
             <><strong>Image</strong> sharing capability.</>,
         ],

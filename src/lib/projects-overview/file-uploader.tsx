@@ -13,7 +13,7 @@ const FileUploaderProject : ProjectOverview = {
         src: FileUploaderImg,
         description: <><strong>Google drive</strong>-like cloud storage application created with ExpressJS and EJS.</>,
         features: [
-            <><strong>Authentification</strong> via username & password.</>,
+            <><strong>Authentication</strong> via username & password.</>,
             <>Folder and file <strong>management</strong>.</>,
             <>Files <strong>upload</strong> and download.</>,
             <>Public folder <strong>sharing</strong> with <strong>expiration</strong> period.</>,

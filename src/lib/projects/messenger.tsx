@@ -17,7 +17,7 @@ const MessengerProject : Project = {
         brief: "This was one of the first full-stack projects I created, it's purpose was to tie everything I learned from The Odin Project's course together in a relatively complex project. A messaging app is a common application on the web.",
         features: [
             <><strong>Real time</strong> messaging.</>,
-            <><strong>Authentification</strong> with <strong>refresh/access</strong> cookie based jwt tokens.</>,
+            <><strong>Authentication</strong> with <strong>refresh/access</strong> cookie based jwt tokens.</>,
             <><strong>Group</strong> creation and <strong>management</strong>.</>,
             <><strong>Image</strong> sharing capability.</>,
             <>Users live <strong>online status.</strong></>,

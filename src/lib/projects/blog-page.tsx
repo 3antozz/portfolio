@@ -16,7 +16,7 @@ const BlogProject : Project = {
         text_description: 'Full-stack blog application with Content Management System for authors.',
         brief: "This is my first full-stack project, it's purpose was to tie everything I learned together in a fun project. It's a Simple Blog app with a Backend API and 2 separate frontends, first is for visitors, second is for authors, to create and edit posts and comments. you need to be an admin to login as author, use the following account: username: 3antozz, password: 123456",
         features: [
-            <><strong>Authentification</strong> via username & password.</>,
+            <><strong>Authentication</strong> via username & password.</>,
             <>Interaction with blogs via <strong>comments</strong>.</>,
             <>Separate <strong>Content Management System</strong> for authors.</>,
             <><strong>Rich text editor</strong> for authors.</>,

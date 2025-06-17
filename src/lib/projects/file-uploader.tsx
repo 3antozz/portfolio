@@ -16,7 +16,7 @@ const FileUploaderProject : Project = {
         text_description: 'Google drive-like cloud storage application created with ExpressJS and EJS.',
         brief: "This was a project assignment from The Odin Project's Node course. The brief was to create a stripped down version of Google Drive using Express and the templating engine EJS.",
         features: [
-            <><strong>Authentification</strong> via username & password.</>,
+            <><strong>Authentication</strong> via username & password.</>,
             <>Folder and file <strong>management</strong>.</>,
             <>Files <strong>upload</strong> and download.</>,
             <>Public folder <strong>sharing</strong> with <strong>expiration</strong> period.</>,
