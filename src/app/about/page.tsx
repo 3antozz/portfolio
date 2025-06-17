@@ -81,7 +81,7 @@ export default function About() {
                 Since my childhood i was always interested in technology, I started using a computer regularly at a young age. Over time, I realized that coding challenged me in ways I found more engaging. It felt more stimulating; faster feedback, direct problem-solving, and a clearer way to meet real human needs. I enjoyed how quickly ideas could come to life and how immediate the impact could be.
                 <br></br>
                 <br></br>
-                I started learning web development since 2023, I went through the full-stack curriculum of <a style={{color: "var(--accent)", textDecoration: "none"}} href="https://www.theodinproject.com/">The Odin Project</a> where I learned everything from basic HTML CSS JS to using advanced tools like frameworks and libraries. I also learned more outside of that course to fill-in the gaps, such as NextJS, SEO, TypeScript...
+                I started learning web development since 2023, I went through the full-stack curriculum of <a style={{color: "var(--accent)", textDecoration: "none"}} href="https://www.theodinproject.com/">The Odin Project</a> where I learned everything from basic HTML, CSS and JS to advanced tools like frameworks and libraries. I also expanded beyond that course to broaden my skill set with technologies such as NextJS, TypeScript, SEO...
                 <br></br>
                 <br></br>
                 Now, as a web developer, I focus on building clean, modern, and user-focused applications. I still carry over a lot from architecture — from system thinking to attention to detail — but now I apply it through code.

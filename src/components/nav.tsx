@@ -9,7 +9,8 @@ const routes = [
     { label: 'OVERVIEW', path: '/' },
     { label: 'PROJECTS', path: '/projects' },
     { label: 'CONTACT', path: '/contact' },
-    { label: 'ABOUT', path: '/about' }
+    { label: 'ABOUT', path: '/about' },
+    { label: 'RESUME', path: '/Yacine_BELAHADJI_resume.pdf'}
 ];
 
 
@@ -59,7 +60,7 @@ export default function Nav() {
         <>
             <nav className={styles.nav} ref={containerRef}>
                 {isReady && <div className={styles.indicator} style={{ left: `${indicatorStyle.left}px`, top: `${indicatorStyle.top}px`, width: `${indicatorStyle.width}px`, height: `${indicatorStyle.height}px` }}></div>}
-                {routes.map((route, index) => <Link key={route.label} ref={element => {linkRefs.current[index] = element}} aria-label="Breadcrumb" className={`${pathname === route.path ? styles.active : ''} ${isReady ? styles.ready : ''}`} href={route.path}>{route.label}</Link>)}
+                {routes.map((route, index) => <Link target={route.label === "RESUME" ? "_blank" : "_self"} key={route.label} ref={element => {linkRefs.current[index] = element}} aria-label="Breadcrumb" className={`${pathname === route.path ? styles.active : ''} ${isReady ? styles.ready : ''}`} href={route.path}>{route.label}</Link>)}
                 <ThemeBtn />
             </nav>
             <ThemeBtn />

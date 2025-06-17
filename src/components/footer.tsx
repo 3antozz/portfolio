@@ -3,7 +3,7 @@ import Image from "next/image"
 import GithubLogo from "@/../public/logos/github.svg"
 import LinkedinLogo from "@/../public/logos/linkedin.svg"
 import Link from "next/link"
-import { Mail } from 'lucide-react';
+import { Mail, FileUser } from 'lucide-react';
 
 export default function Footer() {
     return (
@@ -19,6 +19,9 @@ export default function Footer() {
                     </a>
                     <Link title="Contact" href="/contact">
                         <Mail style={{ transform: "translateX(2%)"}} color="black" />
+                    </Link>
+                    <Link title="Resume" href="/Yacine_BELAHADJI_resume.pdf" target="_blank">
+                        <FileUser color="black" />
                     </Link>
                 </div>
             </div>
