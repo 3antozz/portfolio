@@ -13,6 +13,10 @@ import PostmanLogo from "@/lib/logos/postman"
 import TailwindLogo from "@/lib/logos/tailwind"
 import ZustandLogo from "@/lib/logos/zustand"
 import DockerLogo from "@/lib/logos/docker"
+import WebpackLogo from "@/lib/logos/webpack"
+import RedisLogo from "@/lib/logos/redis"
+import TanstackLogo from "@/lib/logos/tanstack"
+import MongoDBLogo from "@/lib/logos/mongodb"
 import { Logo } from "./definitions"
 
 
@@ -31,7 +35,11 @@ const logos = {
     postman: PostmanLogo,
     tailwind: TailwindLogo,
     zustand: ZustandLogo,
-    docker: DockerLogo
+    docker: DockerLogo,
+    webpack: WebpackLogo,
+    redis: RedisLogo,
+    tanstack: TanstackLogo,
+    mongodb: MongoDBLogo
 } as const satisfies Record<string, Logo>;
 
 export default logos;

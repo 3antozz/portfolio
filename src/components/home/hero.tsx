@@ -17,7 +17,7 @@ export default function Hero() {
                         <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">PostgreSQL</a>.
                     </p>
                     <p>
-                        <strong>Eager</strong> to learn, <strong>quick</strong> to pick up new skills and highly <strong>motivated</strong>.
+                        <strong>Eager</strong> to improve, <strong>quick</strong> to pick up new skills and highly <strong>motivated</strong>.
                     </p>
                     <div className={styles.ctaButtons}>
                         <Link className={`${styles.btn} ${styles.primaryBtn}`} href='/projects'>

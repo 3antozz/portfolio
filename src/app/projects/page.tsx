@@ -38,13 +38,14 @@ export const metadata: Metadata = {
 };
 
 const projectList = [
-  "odinbook",
-  "messenger",
-  "waldo",
-  "blog-page",
-  "file-uploader",
-  "todo_app",
-  "battleship"
+    "dropzone",
+    "odinbook",
+    "messenger",
+    "waldo",
+    "blog-page",
+    "file-uploader",
+    "todo_app",
+    "battleship"
 ];
 
 export default async function Projects() {

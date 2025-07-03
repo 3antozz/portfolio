@@ -1,7 +1,7 @@
 import styles from "./page.module.css";
 import Hero from "@/components/home/hero";
 import Project from "@/components/projects/project";
-import LastProject from "@/lib/projects-overview/odinbook";
+import LastProject from "@/lib/projects-overview/dropzone";
 import GeneralStack from "@/components/home/general-stack";
 import { Metadata } from 'next';
 
@@ -27,7 +27,7 @@ export default function Home() {
                 "url": "https://yacinedev.com",
                 "sameAs": [
                   "https://github.com/3antozz", 
-                  "https://www.linkedin.com/in/yacine-belahadji-b21a60270/",
+                  "https://www.linkedin.com/in/yacine-belahadji/",
                 ],
                 "jobTitle": "Full-Stack Web Developer",
                 "image": "https://yacinedev.com/yacine-picture.jpg",
