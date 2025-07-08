@@ -67,7 +67,7 @@ export default function About() {
         <section className={styles.intro}>
             <h1 className={styles.heading1}>About Me</h1>
             <p className={styles.paragraph}>
-                Hello, Im <em>Yacine Belahadji</em>, 24 yo — from <em>Algeria</em>. I&apos;m a modern full-stack Javascript web developer focused on building fast, user-friendly, and responsive web applications.
+                Hello, Im <em>Yacine Belahadji</em>, 24 yo - from <em>Algeria</em>. I&apos;m a modern full-stack Javascript web developer focused on building fast, user-friendly, and responsive web applications.
                 My tech stack is modern and I&apos;m always looking to learn new things to improve my skills and creations.
             </p>
         </section>
@@ -84,7 +84,7 @@ export default function About() {
                 I started learning web development since 2023, I went through the full-stack curriculum of <a style={{color: "var(--accent)", textDecoration: "none"}} href="https://www.theodinproject.com/">The Odin Project</a> where I learned everything from basic HTML, CSS and JS to advanced tools like frameworks and libraries. I also expanded beyond that course to broaden my skill set with technologies such as NextJS, TypeScript, SEO...
                 <br></br>
                 <br></br>
-                Now, as a web developer, I focus on building clean, modern, and user-focused applications. I still carry over a lot from architecture — from system thinking to attention to detail — but now I apply it through code.
+                Now, as a web developer, I focus on building clean, modern, and user-focused applications. I still carry over a lot from architecture - from system thinking to attention to detail - but now I apply it through code.
             </p>
         </section>
 
@@ -98,7 +98,7 @@ export default function About() {
         <section className={styles.contactLink}>
             <h2 className={styles.heading2}>Want to work together?</h2>
             <p className={styles.paragraph}>
-                  Let’s get in touch — <Link style={{color: "var(--accent)", textDecoration: "none"}} href="/contact">Contact me</Link>.
+                  Let’s get in touch - <Link style={{color: "var(--accent)", textDecoration: "none"}} href="/contact">Contact me</Link>.
             </p>
         </section>
       </main>
