@@ -10,6 +10,21 @@ type Props = {
   params: Promise<{ project: ProjectSlug }>
 }
 
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+    return [
+        "dropzone",
+        "odinbook",
+        "messaging_app",
+        "blog_page",
+        "where_is_waldo",
+        "file_uploader",
+        "battleship",
+        "todo_app",
+    ].map(project => ({project: project}));
+}
+
 
 export async function generateMetadata(
   { params  }: Props
